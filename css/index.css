@@ -1,0 +1,143 @@
+*{
+    margin:0 ;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    scroll-behavior: smooth;
+}
+.header,nav{
+    background: rgb(19, 19, 19);
+    z-index: 100;
+}
+.menu{
+    position: relative;
+}
+.menu-links{
+    z-index: 10;    
+    position: absolute;
+    list-style: none;
+    background: rgb(255, 255, 255);
+    padding: 10px;
+    width: 280%;
+    top: 120%;
+    left: 5%;
+    display: none;
+}
+
+.menu-links a{
+    color: rgb(10, 10, 10);
+}
+.responsive-menu{
+    display: none;
+}
+
+.filter-search li{
+    padding: 10px;
+    margin: 10px;
+    list-style: none;
+    border: 1px solid rgb(184, 179, 179);
+}
+
+.hero label{
+    border-radius: 10px;
+    border: 1px solid gray;
+    transition: all 0.5s;
+}
+.search {
+    background: rgb(143, 90, 10);
+    color: #fff;
+}
+.filter:hover{
+    background: #000;
+    color: #fff;
+}
+.buy-btn{
+    border-right: 1px solid gray;
+}
+input[type='search']:focus{
+    outline: none;
+}
+input[type='search']::placeholder{
+    font-size: 0.7rem;
+}
+
+.map-view{
+    transition: all 0.5s;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    border: 1px solid gray;
+}
+.map-view:hover{
+    background: #000;
+    color: #fff;
+}
+.swiper {
+    width: 100%;
+    height: 400px;
+  }
+.swiper-slide img{
+    width: 100%;
+}
+.swiper-slide{
+    position: relative;
+    
+}
+.state, .like-icon{
+    position: absolute;
+    top: 53%;
+    padding: 5px;
+    font-size: small;
+    background: rgb(2, 74, 128);
+    border-radius: 20px;
+    color: #fff;
+}
+.like-icon{
+    right: 25px;
+    font-size: large;
+    background: none;
+}
+.news-container{
+    margin-bottom: 25px;
+}
+
+.listing .like-icon, .listing .state{
+    top: 45%;
+}
+
+.hide, .accordion-txt{
+    display: none;
+}
+
+@media screen and (max-width:1080px){
+    .responsive-menu{
+        display: block;
+    }
+    .state, .like-icon{
+        top: 70%;
+    }
+    
+}
+
+@media screen and (max-width:880px){
+    .state, .like-icon{
+        top: 55%;
+    }
+}
+
+@media screen and (max-width:760px){
+    .state, .like-icon{
+        top: 75%;
+        font-size: large;
+    }
+}
+
+@media screen and (max-width:480px){
+    .state, .like-icon{
+        top: 60%;
+    }
+}
+
+

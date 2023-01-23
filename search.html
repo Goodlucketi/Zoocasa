@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoocasa</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
+
+</head>
+<body>
+    <header class="header py-4">
+        <nav class="nav-container flex justify-between items-center w-11/12 mx-auto my-0 p-5 sticky top-0">
+            <div class="nav-title">
+                <a href="./index.html"><h3 class="text-white text-3xl">ZO<sup>.</sup>OCASA</h3></a>
+            </div>
+            <div class="nav-links text-white flex justify-evenly items-center lg:hidden">
+                <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                <a class="mx-3" href="">Sold Prices</a>
+                <a class="mx-3" href="">New Construction</a>
+                <a class="mx-3" href="">Map</a>
+                <a class="mx-3" href="">Market Insights</a>
+                <a class="mx-3" href="">Join Our Team <span><i class="fa-solid fa-angle-down"></i></span></a>
+                <a class="mx-6" href=""> <span><i class="fa-regular fa-user"></i></span> Login</a>
+
+                <div class="menu mx-2">
+                    <a class="text-white border-2 rounded-full  p-4" href="">Menu</a>
+                    <div class="menu-links">
+                        <a class="p-1 text-white hover:underline " href="#"><li>Find an Agent</li></a>
+                        <a class="p-1  text-white hover:underline " href="#"><li>New Construction</li></a>
+                        <a class="p-1 text-white hover:underline " href="#"><li>Buy With Us</li></a>
+                        <a class="p-1 text-white hover:underline " href="#"><li>Sell With Us</li></a>
+                        <a class="p-1 text-white hover:underline " href="#"><li>Home Appraisal</li></a>
+                        <a class="p-1 text-white hover:underline " href="#"><li>New Listings</li></a>
+                        <a class="p-1 text-white hover:underline " href="#"><li>Buying Guide</li></a>
+                        <a class="p-1 text-white hover:underline" href="#"><li>Selling Guide</li></a>
+                        <a class="p-1 text-white hover:underline" href="#"><li>Mortgage Calculator</li></a>
+                        <a class="p-1 text-white hover:underline" href="#"><li>Newsletter</li></a>
+                        <a class="p-1 text-white hover:underline" href="#"><li>Covid-19</li></a>
+                        <a class="p-1 text-white hover:underline" href="#"><li>Sitemap</li></a>
+                        <a class="p-1 text-white hover:underline" href="#"><li>About Us</li></a>
+                    </div>
+                   
+                </div>
+                 
+            </div>
+             <div class="responsive-menu text-white lg:block xl:hidden">
+                    <a class="mx-2 p-2" href="#"><span><i class="fa-solid fa-magnifying-glass"></i></span></a>
+                    <a class="mx-2 p-2" href="#"><span><i class="fa-solid fa-user"></i></span></a>
+                    <a class="mx-2 p-2" href="#"><span><i class="fa-solid fa-bars"></i></span></a>
+                </div>
+           
+        </nav>
+
+       <div class="breadcrumb w-11/12 text-white mx-auto p-5">
+            <a href="#" class="hover:underline">Canada</a> <span><i class="fa-solid fa-chevron-right"></i></span>
+            <a href="#" class="hover:underline">Ontario</a> <span><i class="fa-solid fa-chevron-right"></i></span>
+            <a href="#" class="hover:underline">Toronto</a> <span><i class="fa-solid fa-chevron-right"></i></span>
+       </div>
+    </header>
+
+    <section class="py-4">
+        <div class="container mx-auto w-11/12">
+            <div class="listing-links">
+                <a href="#" class="p-4 ml-0 m-2 hover:underline">Listings</a>
+                <a href="#" class="p-4 ml-0 m-2 hover:underline">Buildings</a>
+            </div>
+
+            <div class="flex justify-between item-center border-y-2 border-slate-300 py-4">
+                <div class="search-tab item-center flex item-center w-6/12 gap-1 md:w-full md:justify-between">
+                    <label class="block rounded-lg border-2 border-slate-500 p-2 w-10/12">
+                        <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                        <input class="p-1 " type="search" name="search" id="search" placeholder="Location">
+                    </label>
+                    <label class="filter hidden md:block block p-4 my-1 xs:p-2"><i class="fa-solid fa-sliders"></i> Filter</label>
+                    <button class="block px-3 rounded-lg search">Search</button>
+                </div>
+                <div class="filter-search flex justify-center text-xs w-6/12 md:hidden ">
+                    <li class=" md:hidden">Buy <i class="fa-sharp fa-solid fa-caret-down"></i></li>
+                    <li class=" md:hidden">Active Listings <i class="fa-sharp fa-solid fa-caret-down"></i></li>
+                    <li class="lg:hidden">Home Type <i class="fa-sharp fa-solid fa-caret-down"></i></li>
+                    <li class="lg:hidden">Any Price <i class="fa-sharp fa-solid fa-caret-down"></i></li>
+                    <li class="lg:hidden">0+ Beds <i class="fa-sharp fa-solid fa-caret-down"></i></li>
+                    <li class="hover:bg-black hover:text-white md:hidden">More</li>
+                    <li class="bg-black text-white hover:bg-white hover:text-black md:hidden"><i class="fa-regular fa-map"></i> Map</li>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <section class="bg-slate-50 py-4">
+        <div class="container mx-auto w-11/12 mb-4">
+            <div class="list-head flex justify-between item-center my-5">
+                <h3 class="text-3xl md:text-xl sm:lg">3,727+ Real Estate For Sale in Toronto</h3>
+
+                <select class="rounded-md p-2 border-2" name="sort" id="sort">
+                    <option value="">Newest to Oldest</option>
+                    <option value="">Price (Low to high)</option>
+                    <option value="">Price (High to low)</option>
+                    <option value="">Newest to Oldest</option>
+                    <option value="">Oldest to Newest</option>
+                    <option value="">Bedrooms (High to low)</option>
+                    <option value="">Bedrooms (Low to high)</option>
+                    <option value="">Bathrooms (High to low)</option>
+                    <option value="">Bathrooms (Low to high)</option>
+                </select>
+
+            </div>
+
+            <div class="listings grid grid-cols-4 gap-2 lg:grid-cols-3 sm:grid-cols-2 xs:grid-cols-1">
+                <div class="item relative w-full shadow-md p-0 rounded-lg">
+                    <div class="listing">
+                        <img src="./assets/img/house-isolated-field.jpg" alt="" class="">
+                        <div class="p-2">
+                            <span class="state ml-3">For Sale</span>
+                            <span class="like-icon">🤍</span>
+                            <div class="flex justify-between item-center py-2">
+                                <p class="text-2xl">$780,000</p>
+                                <p>14 Hours</p>
+                            </div>
+                            
+                            <p class = "py-2 hover:underline">402 - 18 Hillcrest Ave</p>
+                            <div class="item-details py-3">
+                                <span><i class="fa-solid fa-bed"></i> 2 Bed</span>
+                                <span><i class="fa-solid fa-bath"></i> 2 Bath</span>
+                                <span><i class="fa-solid fa-ruler-horizontal"></i> 1000 - 1199 sqft</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item relative w-full shadow-md p-0 rounded-lg">
+                    <div class="listing">
+                        <img src="./assets/img/house-isolated-field.jpg" alt="" class="">
+                        <div class="p-2">
+                            <span class="state ml-3">For Sale</span>
+                            <span class="like-icon">🤍</span>
+                            <div class="flex justify-between item-center py-2">
+                                <p class="text-2xl">$780,000</p>
+                                <p>14 Hours</p>
+                            </div>
+                            
+                            <p class = "py-2 hover:underline">402 - 18 Hillcrest Ave</p>
+                            <div class="item-details py-3">
+                                <span><i class="fa-solid fa-bed"></i> 2 Bed</span>
+                                <span><i class="fa-solid fa-bath"></i> 2 Bath</span>
+                                <span><i class="fa-solid fa-ruler-horizontal"></i> 1000 - 1199 sqft</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item relative w-full shadow-md p-0 rounded-lg">
+                    <div class="listing">
+                        <img src="./assets/img/house-isolated-field.jpg" alt="" class="">
+                        <div class="p-2">
+                            <span class="state ml-3">For Sale</span>
+                            <span class="like-icon">🤍</span>
+                            <div class="flex justify-between item-center py-2">
+                                <p class="text-2xl">$780,000</p>
+                                <p>14 Hours</p>
+                            </div>
+                            
+                            <p class = "py-2 hover:underline">402 - 18 Hillcrest Ave</p>
+                            <div class="item-details py-3">
+                                <span><i class="fa-solid fa-bed"></i> 2 Bed</span>
+                                <span><i class="fa-solid fa-bath"></i> 2 Bath</span>
+                                <span><i class="fa-solid fa-ruler-horizontal"></i> 1000 - 1199 sqft</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item relative w-full shadow-md p-0 rounded-lg">
+                    <div class="listing">
+                        <img src="./assets/img/house-isolated-field.jpg" alt="" class="">
+                        <div class="p-2">
+                            <span class="state ml-3">For Sale</span>
+                            <span class="like-icon">🤍</span>
+                            <div class="flex justify-between item-center py-2">
+                                <p class="text-2xl">$780,000</p>
+                                <p>14 Hours</p>
+                            </div>
+                            
+                            <p class = "py-2 hover:underline">402 - 18 Hillcrest Ave</p>
+                            <div class="item-details py-3">
+                                <span><i class="fa-solid fa-bed"></i> 2 Bed</span>
+                                <span><i class="fa-solid fa-bath"></i> 2 Bath</span>
+                                <span><i class="fa-solid fa-ruler-horizontal"></i> 1000 - 1199 sqft</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item relative w-full shadow-md p-0 rounded-lg">
+                    <div class="listing">
+                        <img src="./assets/img/house-isolated-field.jpg" alt="" class="">
+                        <div class="p-2">
+                            <span class="state ml-3">For Sale</span>
+                            <span class="like-icon">🤍</span>
+                            <div class="flex justify-between item-center py-2">
+                                <p class="text-2xl">$780,000</p>
+                                <p>14 Hours</p>
+                            </div>
+                            
+                            <p class = "py-2 hover:underline">402 - 18 Hillcrest Ave</p>
+                            <div class="item-details py-3">
+                                <span><i class="fa-solid fa-bed"></i> 2 Bed</span>
+                                <span><i class="fa-solid fa-bath"></i> 2 Bath</span>
+                                <span><i class="fa-solid fa-ruler-horizontal"></i> 1000 - 1199 sqft</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item relative w-full shadow-md p-0 rounded-lg">
+                    <div class="listing">
+                        <img src="./assets/img/house-isolated-field.jpg" alt="" class="">
+                        <div class="p-2">
+                            <span class="state ml-3">For Sale</span>
+                            <span class="like-icon">🤍</span>
+                            <div class="flex justify-between item-center py-2">
+                                <p class="text-2xl">$780,000</p>
+                                <p>14 Hours</p>
+                            </div>
+                            
+                            <p class = "py-2 hover:underline">402 - 18 Hillcrest Ave</p>
+                            <div class="item-details py-3">
+                                <span><i class="fa-solid fa-bed"></i> 2 Bed</span>
+                                <span><i class="fa-solid fa-bath"></i> 2 Bath</span>
+                                <span><i class="fa-solid fa-ruler-horizontal"></i> 1000 - 1199 sqft</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item relative w-full shadow-md p-0 rounded-lg">
+                    <div class="listing">
+                        <img src="./assets/img/house-isolated-field.jpg" alt="" class="">
+                        <div class="p-2">
+                            <span class="state ml-3">For Sale</span>
+                            <span class="like-icon">🤍</span>
+                            <div class="flex justify-between item-center py-2">
+                                <p class="text-2xl">$780,000</p>
+                                <p>14 Hours</p>
+                            </div>
+                            
+                            <p class = "py-2 hover:underline">402 - 18 Hillcrest Ave</p>
+                            <div class="item-details py-3">
+                                <span><i class="fa-solid fa-bed"></i> 2 Bed</span>
+                                <span><i class="fa-solid fa-bath"></i> 2 Bath</span>
+                                <span><i class="fa-solid fa-ruler-horizontal"></i> 1000 - 1199 sqft</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item relative w-full shadow-md p-0 rounded-lg">
+                    <div class="listing">
+                        <img src="./assets/img/house-isolated-field.jpg" alt="" class="">
+                        <div class="p-2">
+                            <span class="state ml-3">For Sale</span>
+                            <span class="like-icon">🤍</span>
+                            <div class="flex justify-between item-center py-2">
+                                <p class="text-2xl">$780,000</p>
+                                <p>14 Hours</p>
+                            </div>
+                            
+                            <p class = "py-2 hover:underline">402 - 18 Hillcrest Ave</p>
+                            <div class="item-details py-3">
+                                <span><i class="fa-solid fa-bed"></i> 2 Bed</span>
+                                <span><i class="fa-solid fa-bath"></i> 2 Bath</span>
+                                <span><i class="fa-solid fa-ruler-horizontal"></i> 1000 - 1199 sqft</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item relative w-full shadow-md p-0 rounded-lg">
+                    <div class="listing">
+                        <img src="./assets/img/house-isolated-field.jpg" alt="" class="">
+                        <div class="p-2">
+                            <span class="state ml-3">For Sale</span>
+                            <span class="like-icon">🤍</span>
+                            <div class="flex justify-between item-center py-2">
+                                <p class="text-2xl">$780,000</p>
+                                <p>14 Hours</p>
+                            </div>
+                            
+                            <p class = "py-2 hover:underline">402 - 18 Hillcrest Ave</p>
+                            <div class="item-details py-3">
+                                <span><i class="fa-solid fa-bed"></i> 2 Bed</span>
+                                <span><i class="fa-solid fa-bath"></i> 2 Bath</span>
+                                <span><i class="fa-solid fa-ruler-horizontal"></i> 1000 - 1199 sqft</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item relative w-full shadow-md p-0 rounded-lg">
+                    <div class="listing">
+                        <img src="./assets/img/house-isolated-field.jpg" alt="" class="">
+                        <div class="p-2">
+                            <span class="state ml-3">For Sale</span>
+                            <span class="like-icon">🤍</span>
+                            <div class="flex justify-between item-center py-2">
+                                <p class="text-2xl">$780,000</p>
+                                <p>14 Hours</p>
+                            </div>
+                            
+                            <p class = "py-2 hover:underline">402 - 18 Hillcrest Ave</p>
+                            <div class="item-details py-3">
+                                <span><i class="fa-solid fa-bed"></i> 2 Bed</span>
+                                <span><i class="fa-solid fa-bath"></i> 2 Bath</span>
+                                <span><i class="fa-solid fa-ruler-horizontal"></i> 1000 - 1199 sqft</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item relative w-full shadow-md p-0 rounded-lg">
+                    <div class="listing">
+                        <img src="./assets/img/house-isolated-field.jpg" alt="" class="">
+                        <div class="p-2">
+                            <span class="state ml-3">For Sale</span>
+                            <span class="like-icon">🤍</span>
+                            <div class="flex justify-between item-center py-2">
+                                <p class="text-2xl">$780,000</p>
+                                <p>14 Hours</p>
+                            </div>
+                            
+                            <p class = "py-2 hover:underline">402 - 18 Hillcrest Ave</p>
+                            <div class="item-details py-3">
+                                <span><i class="fa-solid fa-bed"></i> 2 Bed</span>
+                                <span><i class="fa-solid fa-bath"></i> 2 Bath</span>
+                                <span><i class="fa-solid fa-ruler-horizontal"></i> 1000 - 1199 sqft</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item relative w-full shadow-md p-0 rounded-lg">
+                    <div class="listing">
+                        <img src="./assets/img/house-isolated-field.jpg" alt="" class="">
+                        <div class="p-2">
+                            <span class="state ml-3">For Sale</span>
+                            <span class="like-icon">🤍</span>
+                            <div class="flex justify-between item-center py-2">
+                                <p class="text-2xl">$780,000</p>
+                                <p>14 Hours</p>
+                            </div>
+                            
+                            <p class = "py-2 hover:underline">402 - 18 Hillcrest Ave</p>
+                            <div class="item-details py-3">
+                                <span><i class="fa-solid fa-bed"></i> 2 Bed</span>
+                                <span><i class="fa-solid fa-bath"></i> 2 Bath</span>
+                                <span><i class="fa-solid fa-ruler-horizontal"></i> 1000 - 1199 sqft</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pagination">
+        <div class="pagination-container flex flex-col justify-center item-center mx-auto w-11/12">
+            <div class="breadcrumb w-11/12 text-black mx-auto p-5 text-center">
+                <a href="#" class="hover:underline">Canada</a> <span><i class="fa-solid fa-chevron-right"></i></span>
+                <a href="#" class="hover:underline">Ontario</a> <span><i class="fa-solid fa-chevron-right"></i></span>
+                <a href="#" class="hover:underline">Toronto</a> <span><i class="fa-solid fa-chevron-right"></i></span>
+           </div>
+           <div class="pagination-tab text-center my-5">
+                <a class="px-5 py-3  text-xl border-2 rounded-md" href="#"><i class="fa-solid fa-chevron-left"></i></a>
+                <a class="px-5 py-3  text-xl border-2 rounded-md" href="#">1</a>
+                <a class="px-5 py-3  text-xl border-2 rounded-md" href="#">2</a>
+                <a class="px-5 py-3  text-xl border-2 rounded-md" href="#">3</a>
+                <a class="px-5 py-3  text-xl border-2 rounded-md" href="#">4</a>
+                <a class="px-5 py-3  text-xl border-2 rounded-md" href="#">5</a>
+                 <span>. . .</span> 
+                <a class="px-5 py-3  text-xl border-2 rounded-md" href="#">133</a>
+                <a class="px-5 py-3  text-xl border-2 rounded-md" href="#"><i class="fa-solid fa-chevron-right"></i></a>
+           </div>
+
+        </div>
+    </section>
+
+    <section>
+        <div class="info-container w-8/12 mx-auto my-10 text-justify">
+            <p class="my-5">Toronto is the capital city of Ontario and is the largest city in Canada with a population of over 6 million people currently. Toronto is a centre for business, arts, culture and is recognized as one of the most multicultural cosmopolitan cities in the world. The current mayor of Toronto is John Tory and has been in office since 2014. Toronto is also home to the University of Toronto, one of the most prestigious research universities in Canada. In 2021, The Economist’s Safe City Index ranked Toronto 2nd safest city in the world.</p>
+
+            <div class="more-info">
+                <div class="accordion border-t-2 p-5 my-5">
+                    <div class="accordion-btn flex justify-between item-center">
+                        <h3 class="text-2xl font-bold">City Guide</h3>
+                        <p class="accord-btn hide"><i class="fa-solid fa-caret-up"></i></p>
+                        <p class="accord-btn show"><i class="fa-solid fa-caret-down"></i></p>
+                    </div>
+                    
+                    <div class="accordion-txt">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident dolorem hic aliquam, alias suscipit porro consectetur voluptatum quod commodi officiis.
+                        </p>
+                    </div>
+                </div>
+                <div class="accordion border-t-2 p-5 my-5">
+                    <div class="accordion-btn flex justify-between item-center">
+                        <h3 class="text-2xl font-bold">Infrastructure</h3>
+                        <p class="accord-btn hide"><i class="fa-solid fa-caret-up"></i></p>
+                        <p class="accord-btn show"><i class="fa-solid fa-caret-down"></i></p>
+                    </div>
+                    
+                    <div class="accordion-txt">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident dolorem hic aliquam, alias suscipit porro consectetur voluptatum quod commodi officiis.
+                        </p>
+                    </div>
+                </div>
+                <div class="accordion border-y-2 p-5 my-5">
+                    <div class="accordion-btn flex justify-between item-center">
+                        <h3 class="text-2xl font-bold">Tax Guide</h3>
+                        <p class="accord-btn hide"><i class="fa-solid fa-caret-up"></i></p>
+                        <p class="accord-btn show"><i class="fa-solid fa-caret-down"></i></p>
+                    </div>
+                    
+                    <div class="accordion-txt">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident dolorem hic aliquam, alias suscipit porro consectetur voluptatum quod commodi officiis.
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="footer my-4">
+        <div class="container grid grid-cols-4 gap-2 justify-center item-center md:grid-cols-2 sm:grid-cols-1 mx-auto w-11/12 border-t-2 border-slate-300 py-4">
+            <div class="pop-cities">
+                <h2 class="text-xl font-bold">Popular Toronto Searches</h3>
+                <p class="text-lg hover:underline">Toronto Homes for Sale</p>
+                <p class="text-lg hover:underline">Toronto Homes for Sale</p>
+                <p class="text-lg hover:underline">Toronto Homes for Sale</p>
+                <p class="text-lg hover:underline">Toronto Homes for Sale</p>
+                <p class="text-lg hover:underline">Toronto Homes for Sale</p>
+                <p class="text-lg hover:underline">Toronto Homes for Sale</p>
+            </div>
+            <div class="pop-cities">
+                <h2 class="text-xl font-bold">Popular GTA Cities</h3>
+                <p class="text-lg hover:underline">Toronto Homes for Sale</p>
+                <p class="text-lg hover:underline">Toronto Homes for Sale</p>
+                <p class="text-lg hover:underline">Toronto Homes for Sale</p>
+                <p class="text-lg hover:underline">Toronto Homes for Sale</p>
+                <p class="text-lg hover:underline">Toronto Homes for Sale</p>
+                <p class="text-lg hover:underline">Toronto Homes for Sale</p>
+            </div>
+            <div class="pop-cities">
+                <h2 class="text-xl font-bold">Popular Ontario Cities</h3>
+                <p class="text-lg hover:underline">Toronto Homes for Sale</p>
+                <p class="text-lg hover:underline">Toronto Homes for Sale</p>
+                <p class="text-lg hover:underline">Toronto Homes for Sale</p>
+                <p class="text-lg hover:underline">Toronto Homes for Sale</p>
+                <p class="text-lg hover:underline">Toronto Homes for Sale</p>
+                <p class="text-lg hover:underline">Toronto Homes for Sale</p>
+            </div>
+            <div class="pop-cities">
+                <h2 class="text-xl font-bold">Popular Western Canada Cities</h3>
+                <p class="text-lg hover:underline">Toronto Homes for Sale</p>
+                <p class="text-lg hover:underline">Toronto Homes for Sale</p>
+                <p class="text-lg hover:underline">Toronto Homes for Sale</p>
+                <p class="text-lg hover:underline">Toronto Homes for Sale</p>
+                <p class="text-lg hover:underline">Toronto Homes for Sale</p>
+                <p class="text-lg hover:underline">Toronto Homes for Sale</p>
+            </div>
+            
+        </div>
+
+        <div class="container grid grid-cols-4 gap-2 justify-center item-center md:grid-cols-2 sm:grid-cols-1 mx-auto w-11/12 border-t-2 border-slate-300 py-4">
+            <div class="pop-cities">
+                <h2 class="text-xl font-bold">Popular Toronto Searches</h3>
+                <p class="text-lg hover:underline">Toronto Homes for Sale</p>
+                <p class="text-lg hover:underline">Toronto Homes for Sale</p>
+                <p class="text-lg hover:underline">Toronto Homes for Sale</p>
+                <p class="text-lg hover:underline">Toronto Homes for Sale</p>
+                <p class="text-lg hover:underline">Toronto Homes for Sale</p>
+                <p class="text-lg hover:underline">Toronto Homes for Sale</p>
+            </div>
+            <div class="pop-cities">
+                <h2 class="text-xl font-bold">Popular GTA Cities</h3>
+                <p class="text-lg hover:underline">Toronto Homes for Sale</p>
+                <p class="text-lg hover:underline">Toronto Homes for Sale</p>
+                <p class="text-lg hover:underline">Toronto Homes for Sale</p>
+                <p class="text-lg hover:underline">Toronto Homes for Sale</p>
+                <p class="text-lg hover:underline">Toronto Homes for Sale</p>
+                <p class="text-lg hover:underline">Toronto Homes for Sale</p>
+            </div>
+            <div class="pop-cities">
+                <h2 class="text-xl font-bold">Popular Ontario Cities</h3>
+                <p class="text-lg hover:underline">Toronto Homes for Sale</p>
+                <p class="text-lg hover:underline">Toronto Homes for Sale</p>
+                <p class="text-lg hover:underline">Toronto Homes for Sale</p>
+                <p class="text-lg hover:underline">Toronto Homes for Sale</p>
+                <p class="text-lg hover:underline">Toronto Homes for Sale</p>
+                <p class="text-lg hover:underline">Toronto Homes for Sale</p>
+            </div>
+            <div class="pop-cities">
+                <h2 class="text-xl font-bold">Popular Western Canada Cities</h3>
+                <p class="text-lg hover:underline">Toronto Homes for Sale</p>
+                <p class="text-lg hover:underline">Toronto Homes for Sale</p>
+                <p class="text-lg hover:underline">Toronto Homes for Sale</p>
+                <p class="text-lg hover:underline">Toronto Homes for Sale</p>
+                <p class="text-lg hover:underline">Toronto Homes for Sale</p>
+                <p class="text-lg hover:underline">Toronto Homes for Sale</p>
+            </div>
+            
+        </div>
+    </section>
+
+    <footer class="bg-black">
+        <div class="container grid grid-cols-3 gap-4 mx-auto w-11/12 py-4 text-white text-center sm:grid-cols-1">
+            <div class="address">
+                <p>250 The Esplanade Suite 408 Toronto, ON M5A 4J5</p>
+            </div>
+            <div class="trademark">
+                <p class="text-xs">Zoocasa © 2007–2023. The trademarks MLS®, Multiple Listing Service® and the associated logos are owned by The Canadian Real Estate Association (CREA) and identify the quality of services provided by real estate professionals who are members of CREA.</p>
+            </div>
+            <div class="contact">
+                <h3 class="text-xl font-bold">Stay Connected</h3>
+                <div class="icons my-2">
+                    <a href="#"><i class="fa-brands fa-facebook fa-2x mx-2"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter fa-2x mx-2"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram fa-2x mx-2"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin fa-2x mx-2"></i></a>
+                </div>
+                <div class="contact-med">
+                    <a href="#"><i class="fa-solid fa-phone"></i> 1-844-683-4663</a>
+                    <a href="#"><i class="fa-regular fa-envelope"></i> INFO@ZOOCASA.COM</a>
+                </div>
+            </div>
+
+    </footer>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>
