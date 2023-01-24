@@ -169,4 +169,22 @@ input[type='search']::placeholder{
     }
 }
 
+@media screen and (max-width:380px){
+    .state, .like-icon{
+        top: 35%;
+    }
+    .swiper-button-next, .swiper-button-prev{
+        position: absolute;
+        top: 25%;
+        color: rgb(245, 240, 240);
+    }
+
+    .menu{
+        position: static;
+    }
+    .menu-links{
+        left: -500%;
+    }
+}
+
 
