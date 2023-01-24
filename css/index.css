@@ -161,17 +161,7 @@ input[type='search']::placeholder{
         color: rgb(245, 240, 240);
     }
 
-    .menu-links{
-        z-index: 10;    
-        position: relative;
-        list-style: none;
-        background: rgb(255, 255, 255);
-        padding: 10px;
-        width: 280%;
-        top: 0%;
-        left: 5%;
-        display: block;
-    }
+    
 }
 
 
