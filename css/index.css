@@ -111,19 +111,30 @@ input[type='search']::placeholder{
     display: none;
 }
 
+.swiper-button-next, .swiper-button-prev{
+    position: absolute;
+    top: 35%;
+    color: rgb(245, 240, 240);
+}
+
 @media screen and (max-width:1080px){
     .responsive-menu{
         display: block;
     }
     .state, .like-icon{
-        top: 70%;
+        top: 55%;
     }
     
 }
 
 @media screen and (max-width:880px){
     .state, .like-icon{
-        top: 55%;
+        top: 45%;
+    }
+    .swiper-button-next, .swiper-button-prev{
+        position: absolute;
+        top: 30%;
+        color: rgb(245, 240, 240);
     }
 }
 
@@ -132,20 +143,30 @@ input[type='search']::placeholder{
         top: 70%;
         font-size: large;
     }
+    .swiper-button-next, .swiper-button-prev{
+        position: absolute;
+        top: 40%;
+        color: rgb(245, 240, 240);
+    }
 }
 
 @media screen and (max-width:480px){
     .state, .like-icon{
-        top: 50%;
+        top: 45%;
+    }
+    .swiper-button-next, .swiper-button-prev{
+        position: absolute;
+        top: 35%;
+        color: rgb(245, 240, 240);
     }
 
     .menu-links{
         z-index: 10;    
-        position: absolute;
+        position: relative;
         list-style: none;
         background: rgb(255, 255, 255);
         padding: 10px;
-        /* width: 280%; */
+        width: 280%;
         top: 0%;
         left: 5%;
         display: block;
