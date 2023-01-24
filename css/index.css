@@ -161,7 +161,12 @@ input[type='search']::placeholder{
         color: rgb(245, 240, 240);
     }
 
-    
+    .menu{
+        position: static;
+    }
+    .menu-links{
+        left: -500%;
+    }
 }
 
 

@@ -47,27 +47,21 @@ const swiper = new Swiper('.swiper', {
   const btn = document.querySelector('.menu-btn')
   const navBtn = document.querySelector('.nav-btn')
 
-  // btn.onclick = function(){
-  //   let menu = document.querySelector('.menu-links')
+  btn.onclick = function(){
+    let menu = document.querySelector('.menu-links')
 
-  //   if(menu.style.display=="block"){
-  //     menu.style.display = 'none'
-  //   }else{
-  //     menu.style.display = 'block'
-  //   }
-  // }
+    if(menu.style.display=="block"){
+      menu.style.display = 'none'
+    }else{
+      menu.style.display = 'block'
+    }
+  }
 
-  // navBtn.onclick = function() {
-  //   let menu = document.querySelector('.menu-links')
-  //   console.log('clicked');
-  //   if(menu.style.display=="block"){
-  //     menu.style.display = 'none'
-  //   }else{
-  //     menu.style.display = 'block'
-  //     // menu.style.width = '100%'
-  //     menu.style.background = 'white'
-  //   }
-  // }
+  navBtn.onclick = function() {
+    let menu = document.querySelector('.menu-links')
+    console.log('clicked');
+    menu.style.display = 'block'
+  }
 
   const accordionShw = document.querySelector('.show')
   const accordionHide = document.querySelector('.hide')
