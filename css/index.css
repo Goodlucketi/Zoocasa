@@ -129,14 +129,26 @@ input[type='search']::placeholder{
 
 @media screen and (max-width:760px){
     .state, .like-icon{
-        top: 75%;
+        top: 70%;
         font-size: large;
     }
 }
 
 @media screen and (max-width:480px){
     .state, .like-icon{
-        top: 60%;
+        top: 50%;
+    }
+
+    .menu-links{
+        z-index: 10;    
+        position: absolute;
+        list-style: none;
+        background: rgb(255, 255, 255);
+        padding: 10px;
+        /* width: 280%; */
+        top: 0%;
+        left: 5%;
+        display: block;
     }
 }
 
