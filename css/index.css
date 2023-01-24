@@ -109,6 +109,7 @@ input[type='search']::placeholder{
 
 .hide, .accordion-txt{
     display: none;
+    transition: all 5s;
 }
 
 .swiper-button-next, .swiper-button-prev{
