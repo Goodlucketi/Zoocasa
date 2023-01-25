@@ -23,7 +23,7 @@
                 <a class="mx-3" href="">Map</a>
                 <a class="mx-3" href="">Market Insights</a>
                 <a class="mx-3" href="">Join Our Team <span><i class="fa-solid fa-angle-down"></i></span></a>
-                <a class="mx-6" href=""> <span><i class="fa-regular fa-user"></i></span> Login</a>
+                <button class="mx-6 loginBtn"> <span><i class="fa-regular fa-user"></i></span> Login</button>
 
                 <div class="menu mx-2">
                     <button class="menu-btn text-white border-2 rounded-full  p-3">Menu</button>
@@ -47,7 +47,7 @@
             </div>
              <div class="responsive-menu text-white lg:block">
                 <a class="mx-2 p-2 sm:mx-1 sm:p-1" href="#"><span><i class="fa-solid fa-magnifying-glass"></i></span></a>
-                <a class="mx-2 p-2 sm:mx-1 sm:p-1" href="#"><span><i class="fa-solid fa-user"></i></span></a>
+                <button class="resloginBtn mx-2 p-2 sm:mx-1 sm:p-1"><span><i class="fa-solid fa-user"></i></span></button>
                 <button class="mx-2 p-2 sm:mx-1 sm:p-1 nav-btn"><span><i class="fa-solid fa-bars"></i></span></button>
 
                 <div class="responsive-links p-5">
@@ -90,37 +90,39 @@
             </div>
         </div>
     </header>
-
-    <div class="login fixed left-1/3 top-32 w-5/12 bg-white p-6 text-md text-slate-500 z-10">
-        <div class="container w-11/12 mx-auto relative">
-            <button class="logincloseBtn absolute right-1"><i class="fa-solid fa-x"></i></button>
-            <h3 class="p-2 text-2xl font-bold">Sign In</h3>
-            <p class="p-2">With a Zoocasa account you gain free access to:</p>
-            <li>Exclusive property listings updated hourly</li>
-            <li>Photos, property details & proce history information</li>
-            <li>Favourite homes & save searches</li>
-            <li>Market Insights & alerts sent to your inbox</li>
-
-            <div class="login-form p-2">
-                <form action="" class="login">
-                    <div class="p-2">
-                        <input type="email" name="email" id="email" placeholder="Email Address" class="p-2 border-2 rounded w-full">
-                    </div>
-                    <div class="relative p-2">
-                        <input type="password" name="password" id="password" placeholder="Password" class="p-2 border-2 rounded w-full">
-
-                        <span class="pwdshw"><i class="fa-regular fa-eye  absolute right-5 top-5"></i></span>
-                        <span class="pwdhide"><i class="fa-regular fa-eye-slash absolute right-5 top-5"></i></span>
-                    </div>
-                    
-                    <p class="p-2"><a href="#" class="text-blue-600">Forgot Password?</a></p>
-                    <input class="text-center text-white p-3 my-2 rounded w-full bg-amber-700" type="submit" value="Sign In">
-
-                    <p class="p-2">Don't have an account? <a href="#" class="text-blue-600">Create An Account</a></p>
-                </form>
+    <section class="loginSection fixed top-0 z-10 w-screen h-screen">
+        <div class="login absolute left-1/3 top-32  bg-white p-6 text-md text-slate-500 md:left-1/4 sm:left-16 xs:w-screen  xs:left-auto xs:text-xl">
+            <div class="container mx-auto relative">
+                <button class="logincloseBtn absolute right-1"><i class="fa-solid fa-x"></i></button>
+                <h3 class="p-2 text-2xl font-bold">Sign In</h3>
+                <p class="p-2">With a Zoocasa account you gain free access to:</p>
+                <li>Exclusive property listings updated hourly</li>
+                <li>Photos, property details & proce history information</li>
+                <li>Favourite homes & save searches</li>
+                <li>Market Insights & alerts sent to your inbox</li>
+    
+                <div class="loginForm p-2">
+                    <form action="" class="login-form">
+                        <div class="py-2">
+                            <input type="email" name="email" id="email" placeholder="Email Address" class="p-2 border-2 rounded w-full">
+                        </div>
+                        <div class="relative py-2">
+                            <input type="password" name="password" id="password" placeholder="Password" class="p-2 border-2 rounded w-full">
+    
+                            <span class="pwdshw"><i class="fa-regular fa-eye  absolute right-5 top-5"></i></span>
+                            <span class="pwdhide"><i class="fa-regular fa-eye-slash absolute right-5 top-5"></i></span>
+                        </div>
+                        
+                        <p class="p-2"><a href="#" class="text-blue-600">Forgot Password?</a></p>
+                        <input class="text-center text-white p-3 my-2 rounded w-full bg-amber-700" type="submit" value="Sign In">
+    
+                        <p class="p-2 text-center">Don't have an account? <a href="#" class="text-blue-600 xs:block">Create An Account</a></p>
+                    </form>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
+    
     <section class="bg-slate-50 py-4 my-4">
         <div class="container grid grid-cols-3 gap-4 lg:grid-cols-2 sm:grid-cols-1 justify-center items-start mx-auto w-10/12">
             <div class="item relative w-full shadow-md p-0 rounded-lg">

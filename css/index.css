@@ -14,7 +14,7 @@ body{
     background: url('../assets/img/zoocasa.jpeg') no-repeat;
     background-size: cover;
     background-attachment: scroll;
-    z-index: 100;
+    z-index: 10;
 }
 .menu{
     position: relative;
@@ -139,6 +139,10 @@ input[type='search']::placeholder{
     border: 2px solid white;
     border-radius: 100%;
     padding: 15px;
+}
+.loginSection{
+    /* display: none; */
+    background: rgba(0, 0, 0, 0.706);
 }
 
 @media screen and (max-width:1080px){

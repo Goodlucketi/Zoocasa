@@ -44,10 +44,13 @@ const swiper = new Swiper('.swiper', {
       }
     }
   }
-
+  const body = document.querySelector('body')
   const btn = document.querySelector('.menu-btn')
   const navBtn = document.querySelector('.nav-btn')
   const closeBtn = document.querySelector('.closeBtn')
+  const loginBtn = document.querySelector('.loginBtn')
+  const resloginBtn = document.querySelector('.resloginBtn')
+  const closeloginBtn = document.querySelector('.logincloseBtn')
 
   btn.onclick = function(){
     let menu = document.querySelector('.menu-links')
@@ -67,6 +70,22 @@ const swiper = new Swiper('.swiper', {
   closeBtn.onclick = function() {
     let menu = document.querySelector('.responsive-links')
       menu.style.display = 'none'
+  }
+
+  loginBtn.onclick = function() {
+    let loginpage = document.querySelector('.loginSection')
+    loginpage.style.display = 'initial'
+    loginpage.style.background = 'rgba(10,10,10,0.7)'
+  }
+  resloginBtn.onclick = function() {
+    let loginpage = document.querySelector('.loginSection')
+    loginpage.style.display = 'initial'
+    loginpage.style.background = 'rgba(10,10,10,0.7)'
+  }
+
+  closeloginBtn.onclick = function() {
+    let loginpage = document.querySelector('.loginSection')
+      loginpage.style.display = 'none'
   }
 
   const accordionShw = document.querySelector('.show')
