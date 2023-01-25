@@ -107,7 +107,7 @@ input[type='search']::placeholder{
 }
 .state, .like-icon{
     position: absolute;
-    top: 53%;
+    top: 50%;
     padding: 5px;
     font-size: small;
     background: rgb(2, 74, 128);
@@ -116,7 +116,7 @@ input[type='search']::placeholder{
 }
 .like-icon{
     right: 25px;
-    font-size: large;
+    font-size: x-large;
     background: none;
 }
 .news-container{
@@ -141,7 +141,7 @@ input[type='search']::placeholder{
     padding: 15px;
 }
 .loginSection{
-    /* display: none; */
+    display: none;
     background: rgba(0, 0, 0, 0.706);
 }
 

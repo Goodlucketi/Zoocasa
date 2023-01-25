@@ -25,7 +25,7 @@
                 <a class="mx-3" href="">Map</a>
                 <a class="mx-3" href="">Market Insights</a>
                 <a class="mx-3" href="">Join Our Team <span><i class="fa-solid fa-angle-down"></i></span></a>
-                <a class="mx-6" href=""> <span><i class="fa-regular fa-user"></i></span> Login</a>
+                <button class="mx-6 loginBtn"> <span><i class="fa-regular fa-user"></i></span> Login</button>
 
                 <div class="menu mx-2">
                     <button class="menu-btn text-white border-2 rounded-full  p-3">Menu</button>
@@ -49,7 +49,7 @@
             </div>
              <div class="responsive-menu text-white lg:block">
                 <a class="mx-2 p-2 sm:mx-1 sm:p-1" href="#"><span><i class="fa-solid fa-magnifying-glass"></i></span></a>
-                <a class="mx-2 p-2 sm:mx-1 sm:p-1" href="#"><span><i class="fa-solid fa-user"></i></span></a>
+                <button class="resloginBtn mx-2 p-2 sm:mx-1 sm:p-1"><span><i class="fa-solid fa-user"></i></span></button>
                 <button class="mx-2 p-2 sm:mx-1 sm:p-1 nav-btn"><span><i class="fa-solid fa-bars"></i></span></button>
 
                 <div class="responsive-links p-5">
@@ -69,7 +69,6 @@
                 </div>
                
             </div>
-        
         </nav>
 
        <div class="breadcrumb w-11/12 text-white mx-auto p-5">
@@ -78,7 +77,38 @@
             <a href="#" class="hover:underline">Toronto</a> <span><i class="fa-solid fa-chevron-right"></i></span>
        </div>
     </header>
-
+    <section class="loginSection fixed top-0 z-10 w-screen h-screen">
+        <div class="login absolute left-1/3 top-32  bg-white p-6 text-md text-slate-500 md:left-1/4 sm:left-16 xs:w-full  xs:left-auto xs:text-xl xs:top-0">
+            <div class="container mx-auto relative">
+                <button class="logincloseBtn absolute right-1"><i class="fa-solid fa-x"></i></button>
+                <h3 class="p-2 text-2xl font-bold">Sign In</h3>
+                <p class="p-2">With a Zoocasa account you gain free access to:</p>
+                <li>Exclusive property listings updated hourly</li>
+                <li>Photos, property details & proce history information</li>
+                <li>Favourite homes & save searches</li>
+                <li>Market Insights & alerts sent to your inbox</li>
+    
+                <div class="loginForm p-2">
+                    <form action="" class="login-form">
+                        <div class="py-2 xs:p-1">
+                            <input type="email" name="email" id="email" placeholder="Email Address" class="p-2 border-2 rounded w-full">
+                        </div>
+                        <div class="relative py-2 xs:p-1">
+                            <input type="password" name="password" id="password" placeholder="Password" class="p-2 border-2 rounded w-full">
+    
+                            <span class="pwdshw"><i class="fa-regular fa-eye  absolute right-5 top-5"></i></span>
+                            <span class="pwdhide"><i class="fa-regular fa-eye-slash absolute right-5 top-5"></i></span>
+                        </div>
+                        
+                        <p class="p-2 xs:p-1"><a href="#" class="text-blue-600">Forgot Password?</a></p>
+                        <input class="text-center text-white p-3 my-2 rounded w-full bg-amber-700" type="submit" value="Sign In">
+    
+                        <p class="p-2 text-center">Don't have an account? <a href="#" class="text-blue-600 xs:block">Create An Account</a></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="py-4">
         <div class="container mx-auto w-11/12">
             <div class="listing-links">
@@ -87,17 +117,17 @@
             </div>
 
             <div class="flex justify-between item-center border-y-2 border-slate-300 py-4 relative">
-                <div class="search-tab item-center flex item-center w-6/12 gap-1 md:w-full md:justify-between">
-                    <label class="block rounded-lg  p-2 w-10/12">
+                <div class="search-tab item-center flex item-center w-5/12 gap-1 lg:w-6/12 md:w-full  relative">
+                    <label class="block rounded-lg border-2 p-2 w-10/12">
                         <span><i class="fa-solid fa-magnifying-glass"></i></span>
                         <input class="p-1 " type="search" name="search" id="search" placeholder="Location">
                     </label>
-                    <div class="flex justify-between item-center gap-2 absolute right-5 top-10px bg-white md:right-1">
+                    <div class="flex justify-between item-center gap-2 absolute right-0 top-10px bg-white md:right-1">
                         <label class="filter hidden md:block p-3 bg-white border-2 rounded"><i class="fa-solid fa-sliders"></i> Filter</label>
                         <label class="search rounded block p-3 "><a href="./search.html">Search</a></label>
                     </div>
                 </div>
-                <div class="filter-search flex justify-center text-xs w-6/12 md:hidden ">
+                <div class="filter-search absolute right-0 flex justify-center text-xs md:hidden ">
                     <li class=" md:hidden">Buy <i class="fa-sharp fa-solid fa-caret-down"></i></li>
                     <li class=" md:hidden">Active Listings <i class="fa-sharp fa-solid fa-caret-down"></i></li>
                     <li class="lg:hidden">Home Type <i class="fa-sharp fa-solid fa-caret-down"></i></li>
@@ -136,7 +166,7 @@
                         <img src="./assets/img/house-isolated-field.jpg" alt="" class="">
                         <div class="p-2">
                             <span class="state ml-3">For Sale</span>
-                            <span class="like-icon">🤍</span>
+                            <span class="like-icon"><i class="fa-sharp fa-solid fa-heart"></i></span>
                             <div class="flex justify-between item-center py-2">
                                 <p class="text-2xl">$780,000</p>
                                 <p>14 Hours</p>
@@ -156,7 +186,7 @@
                         <img src="./assets/img/house-isolated-field.jpg" alt="" class="">
                         <div class="p-2">
                             <span class="state ml-3">For Sale</span>
-                            <span class="like-icon">🤍</span>
+                            <span class="like-icon"><i class="fa-sharp fa-solid fa-heart"></i></span>
                             <div class="flex justify-between item-center py-2">
                                 <p class="text-2xl">$780,000</p>
                                 <p>14 Hours</p>
@@ -176,7 +206,7 @@
                         <img src="./assets/img/house-isolated-field.jpg" alt="" class="">
                         <div class="p-2">
                             <span class="state ml-3">For Sale</span>
-                            <span class="like-icon">🤍</span>
+                            <span class="like-icon"><i class="fa-sharp fa-solid fa-heart"></i></span>
                             <div class="flex justify-between item-center py-2">
                                 <p class="text-2xl">$780,000</p>
                                 <p>14 Hours</p>
@@ -196,7 +226,7 @@
                         <img src="./assets/img/house-isolated-field.jpg" alt="" class="">
                         <div class="p-2">
                             <span class="state ml-3">For Sale</span>
-                            <span class="like-icon">🤍</span>
+                            <span class="like-icon"><i class="fa-sharp fa-solid fa-heart"></i></span>
                             <div class="flex justify-between item-center py-2">
                                 <p class="text-2xl">$780,000</p>
                                 <p>14 Hours</p>
@@ -216,7 +246,7 @@
                         <img src="./assets/img/house-isolated-field.jpg" alt="" class="">
                         <div class="p-2">
                             <span class="state ml-3">For Sale</span>
-                            <span class="like-icon">🤍</span>
+                            <span class="like-icon"><i class="fa-sharp fa-solid fa-heart"></i></span>
                             <div class="flex justify-between item-center py-2">
                                 <p class="text-2xl">$780,000</p>
                                 <p>14 Hours</p>
@@ -236,7 +266,7 @@
                         <img src="./assets/img/house-isolated-field.jpg" alt="" class="">
                         <div class="p-2">
                             <span class="state ml-3">For Sale</span>
-                            <span class="like-icon">🤍</span>
+                            <span class="like-icon"><i class="fa-sharp fa-solid fa-heart"></i></span>
                             <div class="flex justify-between item-center py-2">
                                 <p class="text-2xl">$780,000</p>
                                 <p>14 Hours</p>
@@ -256,7 +286,7 @@
                         <img src="./assets/img/house-isolated-field.jpg" alt="" class="">
                         <div class="p-2">
                             <span class="state ml-3">For Sale</span>
-                            <span class="like-icon">🤍</span>
+                            <span class="like-icon"><i class="fa-sharp fa-solid fa-heart"></i></span>
                             <div class="flex justify-between item-center py-2">
                                 <p class="text-2xl">$780,000</p>
                                 <p>14 Hours</p>
@@ -276,7 +306,7 @@
                         <img src="./assets/img/house-isolated-field.jpg" alt="" class="">
                         <div class="p-2">
                             <span class="state ml-3">For Sale</span>
-                            <span class="like-icon">🤍</span>
+                            <span class="like-icon"><i class="fa-sharp fa-solid fa-heart"></i></span>
                             <div class="flex justify-between item-center py-2">
                                 <p class="text-2xl">$780,000</p>
                                 <p>14 Hours</p>
@@ -296,7 +326,7 @@
                         <img src="./assets/img/house-isolated-field.jpg" alt="" class="">
                         <div class="p-2">
                             <span class="state ml-3">For Sale</span>
-                            <span class="like-icon">🤍</span>
+                            <span class="like-icon"><i class="fa-sharp fa-solid fa-heart"></i></span>
                             <div class="flex justify-between item-center py-2">
                                 <p class="text-2xl">$780,000</p>
                                 <p>14 Hours</p>
@@ -316,7 +346,7 @@
                         <img src="./assets/img/house-isolated-field.jpg" alt="" class="">
                         <div class="p-2">
                             <span class="state ml-3">For Sale</span>
-                            <span class="like-icon">🤍</span>
+                            <span class="like-icon"><i class="fa-sharp fa-solid fa-heart"></i></span>
                             <div class="flex justify-between item-center py-2">
                                 <p class="text-2xl">$780,000</p>
                                 <p>14 Hours</p>
@@ -336,7 +366,7 @@
                         <img src="./assets/img/house-isolated-field.jpg" alt="" class="">
                         <div class="p-2">
                             <span class="state ml-3">For Sale</span>
-                            <span class="like-icon">🤍</span>
+                            <span class="like-icon"><i class="fa-sharp fa-solid fa-heart"></i></span>
                             <div class="flex justify-between item-center py-2">
                                 <p class="text-2xl">$780,000</p>
                                 <p>14 Hours</p>
@@ -356,7 +386,7 @@
                         <img src="./assets/img/house-isolated-field.jpg" alt="" class="">
                         <div class="p-2">
                             <span class="state ml-3">For Sale</span>
-                            <span class="like-icon">🤍</span>
+                            <span class="like-icon"><i class="fa-sharp fa-solid fa-heart"></i></span>
                             <div class="flex justify-between item-center py-2">
                                 <p class="text-2xl">$780,000</p>
                                 <p>14 Hours</p>
