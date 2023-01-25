@@ -22,6 +22,7 @@ const swiper = new Swiper('.swiper', {
 
 
   tailwind.config = {
+    content: ['./src/**/*.{html,js}'],
     theme: {
       screens: {
         '2xl': {'max': '1535px'},

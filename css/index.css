@@ -11,7 +11,9 @@ body{
     scroll-behavior: smooth;
 }
 .header,nav{
-    background: url('../assets/img/zoocasa.jpeg');
+    background: url('../assets/img/zoocasa.jpeg') no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
     z-index: 100;
 }
 .menu{
