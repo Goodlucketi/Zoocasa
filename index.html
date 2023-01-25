@@ -12,9 +12,9 @@
 </head>
 <body>
     <header class="header pb-4">
-        <nav class="nav-container flex justify-between items-center w-10/12 mx-auto my-0 p-5 sticky top-0 border-2 border-white md:w-full">
+        <nav class="nav-container flex justify-between items-center w-10/12 mx-auto my-0 p-5 sticky top-0 md:w-full">
             <div class="nav-title">
-                <a href="./index.html"><h3 class="text-white text-3xl">ZO<sup>.</sup>OCASA</h3></a>
+                <a href="./index.html"><h3 class="text-white text-3xl font-bold sm:text-2xl">ZO<sup>.</sup>OCASA</h3></a>
             </div>
             <div class="nav-links text-white flex justify-evenly items-center lg:hidden">
                 <span><i class="fa-solid fa-magnifying-glass"></i></span>
@@ -46,20 +46,40 @@
                  
             </div>
              <div class="responsive-menu text-white lg:block">
-                    <a class="mx-2 p-2 sm:mx-1 sm:p-1" href="#"><span><i class="fa-solid fa-magnifying-glass"></i></span></a>
-                    <a class="mx-2 p-2 sm:mx-1 sm:p-1" href="#"><span><i class="fa-solid fa-user"></i></span></a>
-                    <button class="mx-2 p-2 sm:mx-1 sm:p-1 nav-btn"><span><i class="fa-solid fa-bars"></i></span></button>
+                <a class="mx-2 p-2 sm:mx-1 sm:p-1" href="#"><span><i class="fa-solid fa-magnifying-glass"></i></span></a>
+                <a class="mx-2 p-2 sm:mx-1 sm:p-1" href="#"><span><i class="fa-solid fa-user"></i></span></a>
+                <button class="mx-2 p-2 sm:mx-1 sm:p-1 nav-btn"><span><i class="fa-solid fa-bars"></i></span></button>
+
+                <div class="responsive-links p-5">
+                    <button class="closeBtn"><i class="fa-solid fa-x"></i></button>
+                    <li class="p-1 my-2 "><a class="text-white hover:underline " href="#">Find an Agent</a></li>
+                    <li class="p-1 my-2 "><a class="text-white hover:underline " href="#">New Construction</a></li>
+                    <li class="p-1 my-2 "><a class="text-white hover:underline " href="#">Buy With Us</a></li>
+                     <li class="p-1 my-2 "><a class="text-white hover:underline " href="#">Sell With Us</a></li>
+                    <li class="p-1 my-2 "><a class="text-white hover:underline " href="#">Home Appraisal</a></li>
+                    <li class="p-1 my-2 "><a class="text-white hover:underline " href="#">New Listings</a></li>
+                    <li class="p-1 my-2 "><a class="text-white hover:underline " href="#">Buying Guide</a></li>
+                    <li class="p-1 my-2 "><a class="text-white hover:underline " href="#">Selling Guide</a></li>
+                    <li class="p-1 my-2 "><a class="text-white hover:underline " href="#">Mortgage Calculator</a></li>
+                    <li class="p-1 my-2 "><a class="text-white hover:underline " href="#">Covid 19</a></li>
+                    <li class="p-1 my-2 "><a class="text-white hover:underline " href="#">Site Map</a></li>
+                    <li class="p-1 my-2 "><a class="text-white hover:underline " href="#">About Us</a></li>
                 </div>
-           
+               
+            </div>
+        
         </nav>
 
         <div class="hero text-white text-center mx-auto mt-10 w-max md:w-11/12">
             <h3 class="text-3xl m-3">Find your home with us</h3>
-            <div class="search-area bg-white rounded text-black text-left p-4 mx-auto flex justify-center gap-2 items-center sm:min-w-fit xs:p-2 xs:w-full ">
+            <div class="search-area bg-white rounded text-black text-left p-4 mx-auto flex gap-2 items-center sm:min-w-fit xs:p-2 xs:w-full relative ">
                 <span class="block p-3 m-0 border-2 border-white buy-btn xs:p-2">Buy <i class="fa-sharp fa-solid fa-caret-down"></i></span>
                 <input type="search" name="search" id="search" placeholder="Enter a city, neighbourhood, address, MLS number or school" class="block py-2 mr-5 border-1 sm:py-1 sm:mr-0">
-                <label class="filter block p-4 my-1 xs:p-2"><i class="fa-solid fa-sliders"></i> Filter</label>
-                <a href="./search.html"><label class="search block p-4 my-1 xs:p-2">Search</label></a>
+                <div class="flex justify-between item-center gap-2 absolute right-5 bg-white md:right-1">
+                    <label class="filter block p-4 my-1 bg-white xs:p-2"><i class="fa-solid fa-sliders"></i> Filter</label>
+                    <label class="search block p-4 my-1 xs:p-2"><a href="./search.html">Search</a></label>
+                </div>
+                
             </div>
             <div class="filter-search flex justify-center items-center my-3 md:hidden ">
                 <li>Sold Listings <i class="fa-sharp fa-solid fa-caret-down"></i></li>
@@ -74,7 +94,7 @@
     <section class="bg-slate-50 py-4 my-4">
         <div class="container grid grid-cols-3 gap-4 lg:grid-cols-2 sm:grid-cols-1 justify-center items-start mx-auto w-10/12">
             <div class="item relative w-full shadow-md p-0 rounded-lg">
-                <h3 class="text-2xl hover:underline">Homes for Sale</h3>
+                <h3 class="text-2xl hover:underline sm:text-xl">Homes for Sale</h3>
                 <span class="map-view p-2"><i class="fa-regular fa-map"></i> Map View</span>
                 <p class="mt-5 text-sm">Current Location: <span>Toronto, ON</span></p>
 

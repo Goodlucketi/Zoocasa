@@ -46,6 +46,7 @@ const swiper = new Swiper('.swiper', {
 
   const btn = document.querySelector('.menu-btn')
   const navBtn = document.querySelector('.nav-btn')
+  const closeBtn = document.querySelector('.closeBtn')
 
   btn.onclick = function(){
     let menu = document.querySelector('.menu-links')
@@ -58,9 +59,13 @@ const swiper = new Swiper('.swiper', {
   }
 
   navBtn.onclick = function() {
-    let menu = document.querySelector('.menu-links')
-    console.log('clicked');
-    menu.style.display = 'block'
+    let menu = document.querySelector('.responsive-links')
+      menu.style.display = 'block'
+  }
+
+  closeBtn.onclick = function() {
+    let menu = document.querySelector('.responsive-links')
+      menu.style.display = 'none'
   }
 
   const accordionShw = document.querySelector('.show')
