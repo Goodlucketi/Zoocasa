@@ -53,14 +53,14 @@ body{
     display: none;
 }
 
-.filter-search li{
+.filter-search>div{
     padding: 10px;
     margin: 10px;
     list-style: none;
     border: 1px solid rgb(184, 179, 179);
 }
 
-.hero label{
+.hero .filter, .hero .search{
     border-radius: 10px;
     border: 1px solid gray;
     transition: all 0.5s;
@@ -82,6 +82,27 @@ input[type='search']:focus{
 input[type='search']::placeholder{
     font-size: 0.7rem;
 }
+.dropBtn:hover ~ .drop{
+    display: initial;
+}
+.dropcheck{
+    width: 150%;
+    background: rgb(62, 10, 91);
+    display: none;
+}
+.dropdwnMenu{
+    width: 320%;
+    background: rgb(62, 10, 91);
+    display: none;
+}
+.dropcheckbox{
+    background: rgb(62, 10, 91);
+    width: 250%;
+    display: none;
+}
+
+
+
 
 .map-view{
     transition: all 0.5s;
