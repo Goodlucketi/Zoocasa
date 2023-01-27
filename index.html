@@ -116,7 +116,36 @@
                         <p class="p-2 xs:p-1"><a href="#" class="text-blue-600">Forgot Password?</a></p>
                         <input class="text-center text-white p-3 my-2 rounded w-full bg-amber-700" type="submit" value="Sign In">
     
-                        <p class="p-2 text-center">Don't have an account? <a href="#" class="text-blue-600 xs:block">Create An Account</a></p>
+                        <p class="p-2 text-center">Don't have an account? <span class="createBtn text-blue-600 xs:block">Create An Account</span></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="createSection fixed top-0 z-10 w-screen h-screen">
+        <div class="create w-8/12 flex justify-center item-center gap-3 absolute left-48 top-32  bg-white text-md text-slate-500 md:left-32 md:p-6 xs:w-full  xs:left-auto xs:text-lg xs:top-5">
+            <div class="log-img w-6/12 md:hidden">
+                <img src="./assets/img/san-francisco-210230_1280.jpg" class="createImg w-full object-cover h-full" alt="">
+            </div>
+            <div class="container mx-auto relative w-6/12 p-3 md:w-full">
+                <button class="createcloseBtn p-2 absolute right-3"><i class="fa-solid fa-x"></i></button>
+                <h3 class="p-2 text-2xl font-bold">Find your home with us</h3>
+                <p class="p-2">With a Zoocasa account you gain:</p>
+                <li>Exclusive property listings updated hourly</li>
+                <li>Photos, property details & proce history information</li>
+                <li>Favourite homes & save searches</li>
+                <li>Market Insights & alerts sent to your inbox</li>
+                <hr class=" mt-6 xs:mt-2">
+                <div class="loginForm p-2">
+                    <h3 class="p-2 text-2xl sm:text-xl">Create an Account</h3>
+                    <p class="p-2">Sign Up with your email or <span class="createBtn text-blue-600 xs:block">Login</span></p>
+                    <form action="" class="login-form">
+                        <div class="py-2 xs:p-1">
+                            <input type="email" name="email" id="mail" placeholder="Email Address" class="p-2 border-2 rounded w-full">
+                        </div>
+                        
+                        <input class="text-center text-white p-3 my-2 rounded w-full bg-amber-700" type="submit" value="Sign Up">
                     </form>
                 </div>
             </div>

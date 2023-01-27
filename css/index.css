@@ -140,10 +140,11 @@ input[type='search']::placeholder{
     border-radius: 100%;
     padding: 15px;
 }
-.loginSection{
+.loginSection,.createSection{
     display: none;
     background: rgba(0, 0, 0, 0.706);
 }
+
 .pwdhide{
     display: none;
 }

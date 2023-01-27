@@ -49,8 +49,10 @@ const btn = document.querySelector('.menu-btn')
 const navBtn = document.querySelector('.nav-btn')
 const closeBtn = document.querySelector('.closeBtn')
 const loginBtn = document.querySelector('.loginBtn')
+const createBtn = document.querySelector('.createBtn')
 const resloginBtn = document.querySelector('.resloginBtn')
 const closeloginBtn = document.querySelector('.logincloseBtn')
+const closeCreateBtn = document.querySelector('.createcloseBtn')
 const pwdshw = document.querySelector('.pwdshw')
 const pwdhide = document.querySelector('.pwdhide')
 
@@ -80,6 +82,14 @@ loginBtn.onclick = function() {
   loginpage.style.background = 'rgba(10,10,10,0.7)'
 }
 
+createBtn.onclick = function() {
+  let loginpage = document.querySelector('.loginSection')
+  let createpage = document.querySelector('.createSection')
+  createpage.style.display = 'initial'
+  createpage.style.background = 'rgba(10,10,10,0.7)'
+  loginpage.style.display = 'none'
+}
+
 // Responsive Navigation function
 resloginBtn.onclick = function() {
   let loginpage = document.querySelector('.loginSection')
@@ -90,6 +100,11 @@ resloginBtn.onclick = function() {
 closeloginBtn.onclick = function() {
   let loginpage = document.querySelector('.loginSection')
     loginpage.style.display = 'none'
+}
+
+closeCreateBtn.onclick = function() {
+  let createpage = document.querySelector('.createSection')
+    createpage.style.display='none'
 }
 
 // Password Toggle function
