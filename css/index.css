@@ -85,8 +85,11 @@ input[type='search']::placeholder{
 .dropBtn:hover ~ .drop{
     display: initial;
 }
+.dropBtn:hover ~ .dropdwnMenu{
+    display: flex;
+}
 .dropcheck{
-    width: 150%;
+    width: 160%;
     background: rgb(62, 10, 91);
     display: none;
 }
@@ -100,9 +103,6 @@ input[type='search']::placeholder{
     width: 250%;
     display: none;
 }
-
-
-
 
 .map-view{
     transition: all 0.5s;
