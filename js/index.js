@@ -150,51 +150,68 @@ pwdshw.onclick = function(){
 }
 
 // Accordion section ---------
-const accordionShw = document.querySelector('.show')
-const accordionHide = document.querySelector('.hide')
-const accordionShw1 = document.querySelector('.show1')
-const accordionHide1 = document.querySelector('.hide1')
-const accordionShw2 = document.querySelector('.show2')
-const accordionHide2 = document.querySelector('.hide2')
+// const accordionShw = document.querySelector('.show')
+// const accordionHide = document.querySelector('.hide')
+// const accordionShw1 = document.querySelector('.show1')
+// const accordionHide1 = document.querySelector('.hide1')
+// const accordionShw2 = document.querySelector('.show2')
+// const accordionHide2 = document.querySelector('.hide2')
 
-accordionShw.onclick = function (){
-  let accordTxt = document.querySelector('.accordion-txt')
-  accordTxt.style.display = 'block'
-  accordionHide.style.display = 'block'
-  accordionShw.style.display = 'none'
-}
+// accordionShw.onclick = function (){
+//   let accordTxt = document.querySelector('.accordion-txt')
+//   accordTxt.style.display = 'block'
+//   accordionHide.style.display = 'block'
+//   accordionShw.style.display = 'none'
+// }
 
-accordionHide.onclick = function (){
-  let accordTxt = document.querySelector('.accordion-txt')
-  accordTxt.style.display = 'none'
-  accordionHide.style.display = 'none'
-  accordionShw.style.display = 'block'
-}
+// accordionHide.onclick = function (){
+//   let accordTxt = document.querySelector('.accordion-txt')
+//   accordTxt.style.display = 'none'
+//   accordionHide.style.display = 'none'
+//   accordionShw.style.display = 'block'
+// }
 
-accordionShw1.onclick = function (){
-  let accordTxt = document.querySelector('.accordion-txt1')
-  accordTxt.style.display = 'block'
-  accordionHide1.style.display = 'block'
-  accordionShw1.style.display = 'none'
-}
+// accordionShw1.onclick = function (){
+//   let accordTxt = document.querySelector('.accordion-txt1')
+//   accordTxt.style.display = 'block'
+//   accordionHide1.style.display = 'block'
+//   accordionShw1.style.display = 'none'
+// }
 
-accordionHide1.onclick = function (){
-  let accordTxt = document.querySelector('.accordion-txt1')
-  accordTxt.style.display = 'none'
-  accordionHide1.style.display = 'none'
-  accordionShw1.style.display = 'block'
-}
+// accordionHide1.onclick = function (){
+//   let accordTxt = document.querySelector('.accordion-txt1')
+//   accordTxt.style.display = 'none'
+//   accordionHide1.style.display = 'none'
+//   accordionShw1.style.display = 'block'
+// }
 
-accordionShw2.onclick = function (){
-  let accordTxt = document.querySelector('.accordion-txt2')
-  accordTxt.style.display = 'block'
-  accordionHide2.style.display = 'block'
-  accordionShw2.style.display = 'none'
-}
+// accordionShw2.onclick = function (){
+//   let accordTxt = document.querySelector('.accordion-txt2')
+//   accordTxt.style.display = 'block'
+//   accordionHide2.style.display = 'block'
+//   accordionShw2.style.display = 'none'
+// }
 
-accordionHide2.onclick = function (){
-  let accordTxt = document.querySelector('.accordion-txt2')
-  accordTxt.style.display = 'none'
-  accordionHide2.style.display = 'none'
-  accordionShw2.style.display = 'block'
-}
+// accordionHide2.onclick = function (){
+//   let accordTxt = document.querySelector('.accordion-txt2')
+//   accordTxt.style.display = 'none'
+//   accordionHide2.style.display = 'none'
+//   accordionShw2.style.display = 'block'
+// }
+
+const property = document.querySelectorAll('.item')
+property.forEach(item => {
+  item.addEventListener('click', ()=>{
+    let propertyModal = document.querySelector('.propertyModal')
+    // console.log(propertyModal);
+    propertyModal.style.display = 'block'
+    
+  })
+});
+
+const closeModal = document.querySelector('.closeModal')
+closeModal.addEventListener('click', ()=>{
+  let propertyModal = document.querySelector('.propertyModal')
+    // console.log(propertyModal);
+    propertyModal.style.display = 'none'
+})

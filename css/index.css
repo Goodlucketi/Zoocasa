@@ -169,6 +169,9 @@ input[type='search']::placeholder{
 .pwdhide{
     display: none;
 }
+.propertyModal{
+    display: none;
+}
 
 @media screen and (max-width:1080px){
     .responsive-menu{
