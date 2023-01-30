@@ -104,6 +104,10 @@ input[type='search']::placeholder{
     display: none;
 }
 
+.relative.active .drop{
+    display: initial;
+}
+
 .map-view{
     transition: all 0.5s;
     position: absolute;
@@ -148,9 +152,23 @@ input[type='search']::placeholder{
     top: 45%;
 }
 
-.hide, .accordion-txt{
+.hide{
     display: none;
     transition: all 5s;
+}
+.accordion-txt{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height linear 0.5s;
+}
+.accordion.active .accordion-txt {
+    max-height: 500px;
+}
+.accordion.active .hide{
+    display: block;
+}
+.accordion.active .show{
+    display: none;
 }
 
 .swiper-button-next, .swiper-button-prev{
