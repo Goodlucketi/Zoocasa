@@ -85,6 +85,7 @@ const closeCreateBtn = document.querySelector('.createcloseBtn')
 const pwdshw = document.querySelector('.pwdshw')
 const pwdhide = document.querySelector('.pwdhide')
 
+
 btn.onclick = function(){
   let menu = document.querySelector('.menu-links')
 
@@ -111,30 +112,31 @@ loginBtn.onclick = function() {
   loginpage.style.background = 'rgba(10,10,10,0.7)'
 }
 
-// createBtn.onclick = function() {
-//   let loginpage = document.querySelector('.loginSection')
-//   let createpage = document.querySelector('.createSection')
-//   createpage.style.display = 'initial'
-//   createpage.style.background = 'rgba(10,10,10,0.7)'
-//   loginpage.style.display = 'none'
-// }
+createBtn.onclick = function() {
+  let loginpage = document.querySelector('.loginSection')
+  let createpage = document.querySelector('.createSection')
+  createpage.style.display = 'initial'
+  createpage.style.background = 'rgba(10,10,10,0.7)'
+  loginpage.style.display = 'none'
+}
 
 // Responsive Navigation function
-resloginBtn.onclick = function() {
+resloginBtn.addEventListener('click', (e)=>{
+  
   let loginpage = document.querySelector('.loginSection')
   loginpage.style.display = 'initial'
   loginpage.style.background = 'rgba(10,10,10,0.7)'
-}
+})
 
 closeloginBtn.onclick = function() {
   let loginpage = document.querySelector('.loginSection')
     loginpage.style.display = 'none'
 }
 
-// closeCreateBtn.onclick = function() {
-//   let createpage = document.querySelector('.createSection')
-//     createpage.style.display='none'
-// }
+closeCreateBtn.onclick = function() {
+  let createpage = document.querySelector('.createSection')
+    createpage.style.display='none'
+}
 
 // Password Toggle function
 pwdhide.onclick = function(){
