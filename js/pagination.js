@@ -1,6 +1,10 @@
 const paginationNumbers = document.getElementById("pagination-numbers");
 const paginatedList = document.getElementById("paginated-list");
 const listItems = paginatedList.querySelectorAll(".item");
+const prevBtn = document.getElementById("prevBtn");
+const nextBtn = document.getElementById("nextBtn");
+
+
 
 const paginationLimit = 12;
 const pageCount = Math.ceil(listItems.length / paginationLimit);
@@ -35,7 +39,7 @@ const handleActivePageNumber = () => {
 const setCurrentPage = (pageNum) => {
   currentPage = pageNum;
   handleActivePageNumber();
-
+  handlePageButtonsStatus();
   const prevRange = (pageNum - 1) * paginationLimit;
   const currRange = pageNum * paginationLimit;
 
@@ -50,7 +54,12 @@ const setCurrentPage = (pageNum) => {
 window.addEventListener("load", () => {
   getPaginationNumbers();
   setCurrentPage(1);
-
+  prevBtn.addEventListener("click", () => {
+    setCurrentPage(currentPage - 1);
+  });
+  nextBtn.addEventListener("click", () => {
+    setCurrentPage(currentPage + 1);
+  });
   document.querySelectorAll(".pagination-number").forEach((button) => {
     const pageIndex = Number(button.getAttribute("page-index"));
 
@@ -61,3 +70,25 @@ window.addEventListener("load", () => {
     }
   });
 });
+
+const disableButton = (button) => {
+    button.classList.add("disabled");
+    button.setAttribute("disabled", true);
+};
+const enableButton = (button) => {
+button.classList.remove("disabled");
+button.removeAttribute("disabled");
+};
+
+const handlePageButtonsStatus = () => {
+    if (currentPage === 1) {
+        disableButton(prevBtn);
+    } else {
+        enableButton(prevBtn);
+    }
+    if (pageCount === currentPage) {
+        disableButton(nextBtn);
+    } else {
+        enableButton(nextBtn);
+    }
+};
