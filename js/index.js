@@ -166,13 +166,29 @@ accordionShw.forEach(accordion => {
   })
 });
 
-const dropdown = document.querySelectorAll('.relative')
+// Dropdown Menu
+const dropdown = document.querySelectorAll('.listDropDwn')
 
 dropdown.forEach(content => {
   content.addEventListener('click', (e)=>{
     content.classList.toggle('active')
     if(e.target !== content){
       content.classList.remove('active')
+    }
+  })
+});
+
+
+const ModalTab = document.querySelectorAll('.modalTab')
+
+ModalTab.forEach(modal => {
+  modal.addEventListener('click', (e)=>{
+    // e.preventDefault()
+   
+    modal.classList.toggle('active')
+    console.log(modal);
+    if(e.target !== modal){
+      modal.classList.remove('active')
     }
   })
 });
@@ -190,8 +206,8 @@ property.forEach(item => {
 });
 
 const closeModal = document.querySelector('.closeModal')
-// closeModal.addEventListener('click', ()=>{
-//   let propertyModal = document.querySelector('.propertyModal')
-//     // console.log(propertyModal);
-//     propertyModal.style.display = 'none'
-// })
+closeModal.addEventListener('click', ()=>{
+  let propertyModal = document.querySelector('.propertyModal')
+    // console.log(propertyModal);
+    propertyModal.style.display = 'none'
+})

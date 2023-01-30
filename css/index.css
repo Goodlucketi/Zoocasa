@@ -89,7 +89,7 @@ input[type='search']::placeholder{
     display: flex;
 }
 .dropcheck{
-    width: 160%;
+    width: 180%;
     background: rgb(62, 10, 91);
     display: none;
 }
@@ -104,7 +104,7 @@ input[type='search']::placeholder{
     display: none;
 }
 
-.relative.active .drop{
+.listDropDwn.active .drop{
     display: initial;
 }
 
@@ -190,7 +190,27 @@ input[type='search']::placeholder{
 .propertyModal{
     display: none;
 }
-
+.modalTabBody{
+    display: none;
+    overflow: hidden;
+    transition: all 1s;
+}
+.modalTab.active .modalTabBody{
+    display: block;
+}
+.modalTab.active .modalTabBtn{
+    background: rgb(183, 179, 179);
+    border-bottom: 4px solid rgb(108, 106, 106);
+}
+.pagination-number{
+    padding: 10px 15px;
+    border: 1px solid rgb(70, 70, 70);
+    margin: 10px;
+    border-radius: 10px;
+}
+.pagination-number.active{
+    background: rgb(145, 144, 142);
+}
 @media screen and (max-width:1080px){
     .responsive-menu{
         display: block;

@@ -99,7 +99,7 @@
                         
                     </div>
                 </div>
-                <div class="relative">
+                <div class="listDropDwn relative">
                     <span class="dropBtn p-3">Home Type <i class="fa-sharp fa-solid fa-caret-down"></i></span> 
                     <div class="dropcheck drop absolute left-0 top-11 p-2 border-2 z-10 w-full text-left">
                         <div class="mb-2">
@@ -124,7 +124,7 @@
                         
                     </div>
                 </div>
-                <div class="relative">
+                <div class="listDropDwn relative">
                     <span class="dropBtn p-3">Any Price <i class="fa-sharp fa-solid fa-caret-down"></i></span>
                     <div class="dropcheckbox drop absolute left-0 top-11 p-2 border-2 text-justify z-10">
                         <div>
@@ -151,7 +151,7 @@
                         
                     </div>
                 </div>
-                <div class="relative">
+                <div class="listDropDwn relative">
                     <span class="dropBtn p-3">0+ Beds <i class="fa-sharp fa-solid fa-caret-down"></i></span>
                     <div class="dropcheckbox drop absolute left-0 top-11 p-2 border-2 text-justify z-10">
                         <div>
@@ -171,7 +171,7 @@
                         </div>                       
                     </div>
                 </div>
-                <div class="relative">More</div>
+                <div class="listDropDwn relative">More</div>
             </div>
         </div>
     </header>
@@ -242,7 +242,7 @@
     
     <!-- Property Details Modal -->
     <section class="propertyModal fixed top-0 z-10 w-screen h-screen overflow-y-scroll">
-        <div class="property overflow-x-hidden w-11/12 absolute left-10 top-0 bg-white text-md text-slate-500 md:left-0 md:p-4 xs:w-full  xs:left-auto xs:text-sm xs:top-0">
+        <div class="property overflow-x-hidden h-screen w-11/12 absolute left-10 top-0 bg-white text-md text-slate-500 md:left-0 md:p-4 xs:w-full  xs:left-auto xs:text-sm xs:top-0">
             <nav class="propertyNav flex bg-black justify-between items-center my-0 p-3 sticky top-0 z-20">
                 <div class="nav-title">
                     <a href="./index.html"><h3 class="text-white text-3xl font-bold sm:text-2xl">ZO<sup>.</sup>OCASA</h3></a>
@@ -292,7 +292,7 @@
                     <div class="swiper-button-next"></div>
                 </div>
             </main>
-            <article class="my-5 grid grid-cols-2 w-10/12">
+            <article class="my-5 grid grid-cols-3 gap-3 ">
                 <div class="container p-3">
                     <p class="text-2xl py-2 hover:underline"><a href="#">205 - 22 Lombad St <br> <span class="text-md">Condo, Toronto, ON</span> </a></p>
                     <button class="p-2 rounded-2xl bg-blue-600 text-white">For Sale</button>
@@ -310,28 +310,63 @@
                     <button class="p-3 my-3 hover:bg-black hover:text-white transition-all duration-1000 border-2 rounded-lg"><i class="fa-solid fa-clock"></i> Price History</button>
                     <button class="p-3 my-3 hover:bg-black transition-all hover:text-white transition-all duration-1000 border-2 rounded-lg"><i class="fa-solid fa-camera"></i> Virtual Tour</button>
                 </div>
-            </article>
-            <div class="modal-form w-3/12 absolute right-10 top-72 z-10 rounded-xl bg-slate-200 border-2 bg-slate-300 md:hidden">
-                <div class="form-container p-4">
-                    <h3 class="my-4">Like what you see?</h3>
-                    <p class="my-3">Complete the form and we will be in touch. <br>No login necessary</p>
-                    <form action="">
-                        <input type="text" name="fname" id="fname" placeholder="First Name" class="p-1 block my-2 w-full border-2 rounded-lg">
-                        <input type="text" name="lname" id="lname" placeholder="Last Name" class="p-1 block my-2 w-full border-2 rounded-lg">
-                        <input type="email" name="contactMail" id="contactMail" placeholder="Email" class="p-1 block my-2 w-full border-2 rounded-lg">
-                        <input type="text" name="phone" id="phone" placeholder="Phone" class="p-2 block my-2 w-full border-2 rounded-lg">
+                <div class="modal-form relative bottom-44 z-10 right-10 rounded-xl bg-slate-200 border-2 bg-slate-300 md:hidden">
+                    <div class="form-container p-4">
+                        <h3 class="my-4">Like what you see?</h3>
+                        <p class="my-3">Complete the form and we will be in touch. <br>No login necessary</p>
+                        <form action="">
+                            <input type="text" name="fname" id="fname" placeholder="First Name" class="p-1 block my-2 w-full border-2 rounded-lg">
+                            <input type="text" name="lname" id="lname" placeholder="Last Name" class="p-1 block my-2 w-full border-2 rounded-lg">
+                            <input type="email" name="contactMail" id="contactMail" placeholder="Email" class="p-1 block my-2 w-full border-2 rounded-lg">
+                            <input type="text" name="phone" id="phone" placeholder="Phone" class="p-2 block my-2 w-full border-2 rounded-lg">
+    
+                            <textarea name="comment" id="comment" cols="10" rows="5" placeholder="When will you like to see this property (Optional)" class="border-2 p-1 block my-2 w-full rounded-lg"></textarea>
+    
+                            <label for="checkProperty">
+                                <input type="checkbox" name="checkProperty" id="checkProperty"> I want to view this property
+                            </label>
+    
+                            <input type="submit" value="Take a Tour" class="p-2 block my-2 w-full border-2 rounded-lg bg-amber-700 text-white">
+                        </form>
+                    </div>
+                </div>
 
-                        <textarea name="comment" id="comment" cols="10" rows="5" placeholder="When will you like to see this property (Optional)" class="border-2 p-1 block my-2 w-full rounded-lg"></textarea>
-
-                        <label for="checkProperty">
-                            <input type="checkbox" name="checkProperty" id="checkProperty"> I want to view this property
-                        </label>
-
-                        <input type="submit" value="Take a Tour" class="p-1 block my-2 w-full border-2 rounded-lg bg-amber-700 text-white">
-                    </form>
+                
+            <div class="modalTabSection relative flex item-center col-span-2 border-2 text-2xl">
+                <div class="modalTab active">
+                    <div class="modalTabBtn">
+                        <span class="p-2 m-2">Key Facts</span>
+                    </div>
+                    <div class="modalTabBody absolute left-0 border-2 px-4">
+                        <li>Lorem ipsim</li>
+                        <li>Lorem ipsim</li>
+                        <li>Lorem ipsim</li>
+                        <li>Lorem ipsim</li>
+                        <li>Lorem ipsim</li>
+                    </div>
+                </div>
+                <div class="modalTab">
+                    <div class="modalTabBtn">
+                        <span class="p-2 m-2">Description</span>
+                    </div>
+                    <div class="modalTabBody absolute left-0 border-2 px-4">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis quis numquam illo temporibus commodi incidunt cumque debitis libero ad harum.
+                    </div>
+                </div>
+                <div class="modalTab">
+                    <div class="modalTabBtn">
+                        <span class="p-2 m-2">Rooms</span>
+                    </div>
+                    <div class="modalTabBody absolute left-0 border-2 px-4">
+                        oldebitis libero ad harum.
+                        <ol>1 room</ol>
+                        <ol>1 room</ol>
+                        <ol>1 room</ol>
+                        <ol>1 room</ol>
+                    </div>
                 </div>
             </div>
-            
+            </article>
         </div>
     </section>
 
