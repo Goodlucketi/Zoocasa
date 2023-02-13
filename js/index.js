@@ -168,13 +168,13 @@ accordionShw.forEach(accordion => {
 
 // Dropdown Menu
 const dropdown = document.querySelectorAll('.listDropDwn')
-
 dropdown.forEach(content => {
   content.addEventListener('click', (e)=>{
+    console.log(content);
     content.classList.toggle('active')
-    if(e.target !== content){
-      content.classList.remove('active')
-    }
+    // if(e.target !== content){
+    //   content.classList.remove('active')
+    // }
   })
 });
 

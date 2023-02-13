@@ -82,12 +82,7 @@ input[type='search']:focus{
 input[type='search']::placeholder{
     font-size: 0.7rem;
 }
-.dropBtn:hover ~ .drop{
-    display: initial;
-}
-.dropBtn:hover ~ .dropdwnMenu{
-    display: flex;
-}
+
 .dropcheck{
     width: 180%;
     background: rgb(62, 10, 91);
