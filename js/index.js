@@ -52,15 +52,21 @@ const swiper3 = new Swiper('.swiper3', {
   // Optional parameters
   direction: 'horizontal',
   loop: true,
-  slidesPerView: 4,
+  slidesPerView: 2,
   spaceBetween:10,
   slidesPerGroup:4,
 
-  // breakpoints: {
-  //   765:{
-  //     slidesPerView:2,
-  //   },
-  // },
+  breakpoints: {
+    880:{
+      slidesPerView:4,
+    },
+    765:{
+      slidesPerView:3,
+    },
+    480:{
+      slidesPerView:2,
+    },
+  },
   // If we need pagination
   pagination: {
     el: '.swiper-pagination',

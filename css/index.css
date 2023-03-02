@@ -218,7 +218,6 @@ input[type='search']::placeholder{
 .cons-hero{
     background: url('../assets/img/construction\ hero.webp') no-repeat;
     background-size: cover;
-    height: 45vh;
 }
 
 .consBtn {
