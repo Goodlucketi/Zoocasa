@@ -48,6 +48,36 @@ const swiper2 = new Swiper('.swiper2', {
   },
 });
 
+const swiper3 = new Swiper('.swiper3', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+  slidesPerView: 4,
+  spaceBetween:10,
+  slidesPerGroup:4,
+
+  // breakpoints: {
+  //   765:{
+  //     slidesPerView:2,
+  //   },
+  // },
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+});
+
 
 
 tailwind.config = {

@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoocasa</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
+
+</head>
+<body>
+    <header class="header py-2">
+        <nav class="nav-container flex justify-between items-center w-10/12 mx-auto my-0 p-2 sticky top-0 md:w-full">
+            <div class="nav-title">
+                <a href="./index.html"><h3 class="text-white text-3xl font-bold sm:text-2xl">ZO<sup>.</sup>OCASA</h3></a>
+            </div>
+            <div class="nav-links text-white flex justify-evenly items-center lg:hidden">
+                <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                <a class="mx-3 hover:underline" href="">Sold Prices</a>
+                <a class="mx-3 hover:underline" href="./construction.html">New Construction</a>
+                <a class="mx-3 hover:underline" href="">Map</a>
+                <a class="mx-3 hover:underline" href="">Market Insights</a>
+                <a class="mx-3 hover:underline" href="">Join Our Team <span><i class="fa-solid fa-angle-down"></i></span></a>
+                <button class="mx-6 loginBtn"> <span><i class="fa-regular fa-user"></i></span> Login</button>
+
+                <div class="menu mx-2">
+                    <button class="menu-btn text-white border-2 rounded-full  p-3">Menu</button>
+                    <div class="menu-links">
+                        <li class="p-1 my-2 "><a class="text-white hover:underline " href="#">Find an Agent</a></li>
+                        <li class="p-1 my-2 "><a class="text-white hover:underline " href="#">New Construction</a></li>
+                        <li class="p-1 my-2 "><a class="text-white hover:underline " href="#">Buy With Us</a></li>
+                         <li class="p-1 my-2 "><a class="text-white hover:underline " href="#">Sell With Us</a></li>
+                        <li class="p-1 my-2 "><a class="text-white hover:underline " href="#">Home Appraisal</a></li>
+                        <li class="p-1 my-2 "><a class="text-white hover:underline " href="#">New Listings</a></li>
+                        <li class="p-1 my-2 "><a class="text-white hover:underline " href="#">Buying Guide</a></li>
+                        <li class="p-1 my-2 "><a class="text-white hover:underline " href="#">Selling Guide</a></li>
+                        <li class="p-1 my-2 "><a class="text-white hover:underline " href="#">Mortgage Calculator</a></li>
+                        <li class="p-1 my-2 "><a class="text-white hover:underline " href="#">Covid 19</a></li>
+                        <li class="p-1 my-2 "><a class="text-white hover:underline " href="#">Site Map</a></li>
+                        <li class="p-1 my-2 "><a class="text-white hover:underline " href="#">About Us</a></li>
+                    </div>
+                   
+                </div>
+                 
+            </div>
+             <div class="responsive-menu text-white lg:block">
+                <a class="mx-2 p-2 sm:mx-1 sm:p-1" href="#"><span><i class="fa-solid fa-magnifying-glass"></i></span></a>
+                <button class="resloginBtn mx-2 p-2 sm:mx-1 sm:p-1"><span><i class="fa-solid fa-user"></i></span></button>
+                <button class="mx-2 p-2 sm:mx-1 sm:p-1 nav-btn"><span><i class="fa-solid fa-bars"></i></span></button>
+
+                <div class="responsive-links p-5">
+                    <button class="closeBtn"><i class="fa-solid fa-x"></i></button>
+                    <li class="p-1 my-2 "><a class="text-white hover:underline " href="#">Find an Agent</a></li>
+                    <li class="p-1 my-2 "><a class="text-white hover:underline " href="#">New Construction</a></li>
+                    <li class="p-1 my-2 "><a class="text-white hover:underline " href="#">Buy With Us</a></li>
+                     <li class="p-1 my-2 "><a class="text-white hover:underline " href="#">Sell With Us</a></li>
+                    <li class="p-1 my-2 "><a class="text-white hover:underline " href="#">Home Appraisal</a></li>
+                    <li class="p-1 my-2 "><a class="text-white hover:underline " href="#">New Listings</a></li>
+                    <li class="p-1 my-2 "><a class="text-white hover:underline " href="#">Buying Guide</a></li>
+                    <li class="p-1 my-2 "><a class="text-white hover:underline " href="#">Selling Guide</a></li>
+                    <li class="p-1 my-2 "><a class="text-white hover:underline " href="#">Mortgage Calculator</a></li>
+                    <li class="p-1 my-2 "><a class="text-white hover:underline " href="#">Covid 19</a></li>
+                    <li class="p-1 my-2 "><a class="text-white hover:underline " href="#">Site Map</a></li>
+                    <li class="p-1 my-2 "><a class="text-white hover:underline " href="#">About Us</a></li>
+                </div>
+               
+            </div>
+        </nav>
+    </header>
+    <section class="hero relative">
+        <div class="hero-txt relative top-32 mx-auto p-4 w-5/12 bg-black/60 text-white text-center text-4xl">
+            <h2 class="font-serif">Explore New Contruction Homes</h2>
+        </div>
+    </section>
+
+    <!-- Login Modal -->
+    <section class="loginSection fixed top-0 z-10 w-screen h-screen">
+        <div class="login absolute left-1/3 top-32  bg-white p-6 text-md text-slate-500 md:left-1/4 sm:left-16 xs:w-full  xs:left-auto xs:text-xl xs:top-0">
+            <div class="container mx-auto relative">
+                <button class="logincloseBtn absolute right-1"><i class="fa-solid fa-x"></i></button>
+                <h3 class="p-2 text-2xl font-bold">Sign In</h3>
+                <p class="p-2">With a Zoocasa account you gain free access to:</p>
+                <li>Exclusive property listings updated hourly</li>
+                <li>Photos, property details & proce history information</li>
+                <li>Favourite homes & save searches</li>
+                <li>Market Insights & alerts sent to your inbox</li>
+    
+                <div class="loginForm p-2">
+                    <form action="" class="login-form">
+                        <div class="py-2 xs:p-1">
+                            <input type="email" name="email" id="email" placeholder="Email Address" class="p-2 border-2 rounded w-full">
+                        </div>
+                        <div class="relative py-2 xs:p-1">
+                            <input type="password" name="password" id="password" placeholder="Password" class="p-2 border-2 rounded w-full">
+    
+                            <span class="pwdshw"><i class="fa-regular fa-eye  absolute right-5 top-5"></i></span>
+                            <span class="pwdhide"><i class="fa-regular fa-eye-slash absolute right-5 top-5"></i></span>
+                        </div>
+                        
+                        <p class="p-2 xs:p-1"><a href="#" class="text-blue-600">Forgot Password?</a></p>
+                        <input class="text-center text-white p-3 my-2 rounded w-full bg-amber-700" type="submit" value="Sign In">
+    
+                        <p class="p-2 text-center">Don't have an account? <a href="#" class="text-blue-600 xs:block">Create An Account</a></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+       <!-- Create Account Modal -->
+       <section class="createSection fixed top-0 z-10 w-screen h-screen">
+        <div class="create w-8/12 flex justify-center item-center gap-3 absolute left-48 top-32  bg-white text-md text-slate-500 md:left-32 md:p-4 xs:w-full  xs:left-auto xs:text-sm xs:top-20">
+            <div class="log-img w-6/12 md:hidden">
+                <img src="./assets/img/san-francisco-210230_1280.jpg" class="createImg w-full object-cover h-full" alt="">
+            </div>
+            <div class="container mx-auto relative w-6/12 p-3 md:w-full">
+                <button class="createcloseBtn p-2 absolute right-3"><i class="fa-solid fa-x"></i></button>
+                <h3 class="p-2 text-2xl font-bold">Find your home with us</h3>
+                <p class="p-2">With a Zoocasa account you gain:</p>
+                <li>Exclusive property listings updated hourly</li>
+                <li>Photos, property details & proce history information</li>
+                <li>Favourite homes & save searches</li>
+                <li>Market Insights & alerts sent to your inbox</li>
+                <hr class=" mt-6 xs:mt-2">
+                <div class="loginForm p-2">
+                    <h3 class="p-2 text-2xl sm:text-xl">Create an Account</h3>
+                    <p class="p-2">Sign Up with your email or <span class="createBtn text-blue-600 xs:block">Login</span></p>
+                    <form action="" class="login-form">
+                        <div class="py-2 xs:p-1">
+                            <input type="email" name="email" id="mail" placeholder="Email Address" class="p-2 border-2 rounded w-full">
+                        </div>
+                        
+                        <input class="text-center text-white p-3 my-2 rounded w-full bg-amber-700" type="submit" value="Sign Up">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Property Details Modal -->
+    <section class="propertyModal fixed top-0 z-10 w-screen h-screen overflow-y-scroll">
+        <div class="property overflow-x-hidden h-screen w-11/12 absolute left-10 top-0 bg-white text-md text-slate-500 md:left-0 md:p-4 xs:w-full  xs:left-auto xs:text-sm xs:top-0">
+            <nav class="propertyNav flex bg-black justify-between items-center my-0 p-3 sticky top-0 z-20">
+                <div class="nav-title">
+                    <a href="./index.html"><h3 class="text-white text-3xl font-bold sm:text-2xl">ZO<sup>.</sup>OCASA</h3></a>
+                </div>
+                <div class="nav-icons">
+                    <span class="p-3 mx-2"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square text-2xl"></i></span>
+                    <span class="p-3 mx-2 closeModal"><i class="fa-solid fa-xmark text-2xl"></i></span>
+                </div>
+            </nav>
+            <main class="carousel relative">
+                <div class="modal-icon absolute right-5 z-10 top-5">
+                    <span class="p-3 mr-2 rounded-full bg-slate-300 text-white"><i class="fa-regular fa-map"></i></span>
+                    <span class="p-3 mr-2 rounded-full bg-slate-300 text-white"><i class="fa-solid fa-share-nodes"></i></span>
+                    <span class="p-3 mr-2 rounded-full bg-slate-300 text-white"><i class="fa-regular fa-heart"></i></span>
+                </div>
+                
+                <!-- Slider main container -->
+                <div class="swiper2">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <img src="./assets/img/house-isolated-field.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/img/house-1867187_1920.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/img/large-home-389271_1280.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/img/large-home-389271_1280.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/img/house-isolated-field.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/img/house-1867187_1920.jpg" alt="">
+                        </div>
+                    
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </main>
+            <article class="my-5 grid grid-cols-3 gap-3 ">
+                <div class="container p-3">
+                    <p class="text-2xl py-2 hover:underline"><a href="#">205 - 22 Lombad St <br> <span class="text-md">Condo, Toronto, ON</span> </a></p>
+                    <button class="p-2 rounded-2xl bg-blue-600 text-white">For Sale</button>
+
+                    <div class="item-details py-3 text-lg">
+                        <span class="mr-2"><i class="fa-solid fa-bed"></i> 2 Bed</span>
+                        <span class="mr-2"><i class="fa-solid fa-bath"></i> 2 Bath</span>
+                        <span class="mr-2"><i class="fa-solid fa-ruler-horizontal"></i> 1000 - 1199 sqft</span>
+                        <span><i class="fa-solid fa-car"></i> 1</span>
+                    </div>
+                </div>
+                <div class="price">
+                    <p class="text-2xl my-3">$1,630,990</p>
+                    <p class="my-3">Added 2 Hours Ago</p>
+                    <button class="p-3 my-3 hover:bg-black hover:text-white transition-all duration-1000 border-2 rounded-lg"><i class="fa-solid fa-clock"></i> Price History</button>
+                    <button class="p-3 my-3 hover:bg-black transition-all hover:text-white transition-all duration-1000 border-2 rounded-lg"><i class="fa-solid fa-camera"></i> Virtual Tour</button>
+                </div>
+                <div class="modal-form relative bottom-44 z-10 right-10 rounded-xl bg-slate-200 border-2 bg-slate-300 md:hidden">
+                    <div class="form-container p-4">
+                        <h3 class="my-4">Like what you see?</h3>
+                        <p class="my-3">Complete the form and we will be in touch. <br>No login necessary</p>
+                        <form action="">
+                            <input type="text" name="fname" id="fname" placeholder="First Name" class="p-1 block my-2 w-full border-2 rounded-lg">
+                            <input type="text" name="lname" id="lname" placeholder="Last Name" class="p-1 block my-2 w-full border-2 rounded-lg">
+                            <input type="email" name="contactMail" id="contactMail" placeholder="Email" class="p-1 block my-2 w-full border-2 rounded-lg">
+                            <input type="text" name="phone" id="phone" placeholder="Phone" class="p-2 block my-2 w-full border-2 rounded-lg">
+    
+                            <textarea name="comment" id="comment" cols="10" rows="5" placeholder="When will you like to see this property (Optional)" class="border-2 p-1 block my-2 w-full rounded-lg"></textarea>
+    
+                            <label for="checkProperty">
+                                <input type="checkbox" name="checkProperty" id="checkProperty"> I want to view this property
+                            </label>
+    
+                            <input type="submit" value="Take a Tour" class="p-2 block my-2 w-full border-2 rounded-lg bg-amber-700 text-white">
+                        </form>
+                    </div>
+                </div>
+
+                
+            <div class="modalTabSection relative flex item-center col-span-2 border-2 text-2xl">
+                <div class="modalTab active">
+                    <div class="modalTabBtn">
+                        <span class="p-2 m-2">Key Facts</span>
+                    </div>
+                    <div class="modalTabBody absolute left-0 border-2 px-4">
+                        <li>Lorem ipsim</li>
+                        <li>Lorem ipsim</li>
+                        <li>Lorem ipsim</li>
+                        <li>Lorem ipsim</li>
+                        <li>Lorem ipsim</li>
+                    </div>
+                </div>
+                <div class="modalTab">
+                    <div class="modalTabBtn">
+                        <span class="p-2 m-2">Description</span>
+                    </div>
+                    <div class="modalTabBody absolute left-0 border-2 px-4">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis quis numquam illo temporibus commodi incidunt cumque debitis libero ad harum.
+                    </div>
+                </div>
+                <div class="modalTab">
+                    <div class="modalTabBtn">
+                        <span class="p-2 m-2">Rooms</span>
+                    </div>
+                    <div class="modalTabBody absolute left-0 border-2 px-4">
+                        oldebitis libero ad harum.
+                        <ol>1 room</ol>
+                        <ol>1 room</ol>
+                        <ol>1 room</ol>
+                        <ol>1 room</ol>
+                    </div>
+                </div>
+            </div>
+            </article>
+        </div>
+    </section>
+
+    <section class="py-4">
+        <div class="container mx-auto w-10/12">
+            <h3 class="text-center text-3xl p-3 font-serif">Get Exclusive VIP Access</h3>
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <img src="./assets/img/cons swipe.webp" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/img/cons swipe2" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/img/cons swipe3" alt="">
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+            
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-slate-50 py-4">
+        <div class="container mx-auto w-10/12 mb-4 relative overflow-x-hidden">
+            <h3 class="text-2xl font-mono">Buy Today</h3>
+            <div class="swiper3">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide py-5 relative">
+                        <img src="./assets/img/cons swipe.webp" alt="" class="h-60 object-cover">
+                        <div class="p-2">
+                            <h3 class="font-bold text-2xl">High $800s</h3>
+                            <p>1181 Queen West</p>
+                            <p><span><i class="fa-sharp fa-solid fa-city"></i></span> Skale</p>
+                        </div>
+                        <p class="bg-black/70 absolute top-10 left-5 rounded-xl p-1 text-white font-bold">This Year</p>
+                        <p class="bg-black/70 absolute top-48 text-xl left-5 rounded-xl p-1 text-white font-bold">TORONTO (QUEEN AND DEFFERIN)</p>
+                    </div>
+                    <div class="swiper-slide py-5 relative">
+                        <img src="./assets/img/cons swipe2" alt="" class="h-60 object-cover">
+                        <div class="p-2">
+                            <h3 class="font-bold text-2xl">High $600s</h3>
+                            <p>1181 Queen West</p>
+                            <p><span><i class="fa-sharp fa-solid fa-city"></i></span> Skale</p>
+                        </div>
+                        <p class="bg-black/70 absolute top-10 left-5 rounded-xl p-1 text-white font-bold">Spring 2022</p>
+                        <p class="bg-black/70 absolute top-48 text-xl left-5 rounded-xl p-1 text-white font-bold">OTTAWA</p>
+                    </div>
+                    <div class="swiper-slide py-5 relative">
+                        <img src="./assets/img/cons swipe3" alt="" class="h-60 object-cover">
+                        <div class="p-2">
+                            <h3 class="font-bold text-2xl">Mid $800s</h3>
+                            <p>1181 Queen West</p>
+                            <p><span><i class="fa-sharp fa-solid fa-city"></i></span> Skale</p>
+                        </div>
+                        <p class="bg-black/70 absolute top-10 left-5 rounded-xl p-1 text-white font-bold">Winter 2022</p>
+                        <p class="bg-black/70 absolute top-48 text-xl left-5 rounded-xl p-1 text-white font-bold">TORONTO (AVENUE AND LAWRENCE)</p>
+                    </div>
+                    <div class="swiper-slide py-5 relative">
+                        <img src="./assets/img/cons swipe.webp" alt="" class="h-60 object-cover">
+                        <div class="p-2">
+                            <h3 class="font-bold text-2xl">Low $1.7Ms</h3>
+                            <p>1181 Queen West</p>
+                            <p><span><i class="fa-sharp fa-solid fa-city"></i></span> Skale</p>
+                        </div>
+                        <p class="bg-black/70 absolute top-10 left-5 rounded-xl p-1 text-white font-bold">Spring 2023</p>
+                        <p class="bg-black/70 absolute top-48 text-xl left-5 rounded-xl p-1 text-white font-bold">TORONTO (ANETTE AND KEELE)</p>
+                    </div>
+                    <div class="swiper-slide py-5 relative">
+                        <img src="./assets/img/cons swipe.webp" alt="" class="h-60 object-cover">
+                        <div class="p-2">
+                            <h3 class="font-bold text-2xl">High $600</h3>
+                            <p>1181 Queen West</p>
+                            <p><span><i class="fa-sharp fa-solid fa-city"></i></span> Skale</p>
+                        </div>
+                        <p class="bg-black/70 absolute top-10 left-5 rounded-xl p-1 text-white font-bold">Spring 2023</p>
+                        <p class="bg-black/70 absolute top-48 text-xl left-5 rounded-xl p-1 text-white font-bold">TORONTO (QUEEN AND DEFFERIN)</p>
+                    </div>
+                    <div class="swiper-slide py-5 relative">
+                        <img src="./assets/img/cons swipe2" alt="" class="h-60 object-cover">
+                        <div class="p-2">
+                            <h3 class="font-bold text-2xl">High $600</h3>
+                            <p>1181 Queen West</p>
+                            <p><span><i class="fa-sharp fa-solid fa-city"></i></span> Skale</p>
+                        </div>
+                        <p class="bg-black/70 absolute top-10 left-5 rounded-xl p-1 text-white font-bold">This Year</p>
+                        <p class="bg-black/70 absolute top-48 text-xl left-5 rounded-xl p-1 text-white font-bold">OTTAWA</p>
+                    </div>
+                    <div class="swiper-slide py-5 relative">
+                        <img src="./assets/img/cons swipe3" alt="" class="h-60 object-cover">
+                        <div class="p-2">
+                            <h3 class="font-bold text-2xl">High $600</h3>
+                            <p>1181 Queen West</p>
+                            <p><span><i class="fa-sharp fa-solid fa-city"></i></span> Skale</p>
+                        </div>
+                        <p class="bg-black/70 absolute top-10 left-5 rounded-xl p-1 text-white font-bold">This Year</p>
+                        <p class="bg-black/70 absolute top-48 text-xl left-5 rounded-xl p-1 text-white font-bold">TORONTO (AVENUE AND LAWRENCE)</p>
+                    </div>
+                    <div class="swiper-slide py-5 relative">
+                        <img src="./assets/img/cons swipe.webp" alt="" class="h-60 object-cover">
+                        <div class="p-2">
+                            <h3 class="font-bold text-2xl">High $600</h3>
+                            <p>1181 Queen West</p>
+                            <p><span><i class="fa-sharp fa-solid fa-city"></i></span> Skale</p>
+                        </div>
+                        <p class="bg-black/70 absolute top-10 left-5 rounded-xl p-1 text-white font-bold">This Year</p>
+                        <p class="bg-black/70 absolute top-48 text-xl left-5 rounded-xl p-1 text-white font-bold">TORONTO (ANETTE AND KEELE)</p>
+                    </div>
+                    <div class="swiper-slide py-5 relative">
+                        <img src="./assets/img/cons swipe.webp" alt="" class="h-60 object-cover">
+                        <div class="p-2">
+                            <h3 class="font-bold text-2xl">High $600</h3>
+                            <p>1181 Queen West</p>
+                            <p><span><i class="fa-sharp fa-solid fa-city"></i></span> Skale</p>
+                        </div>
+                        <p class="bg-black/70 absolute top-10 left-5 rounded-xl p-1 text-white font-bold">This Year</p>
+                        <p class="bg-black/70 absolute top-48 text-xl left-5 rounded-xl p-1 text-white font-bold">TORONTO (QUEEN AND DEFFERIN)</p>
+                    </div>
+                    <div class="swiper-slide py-5 relative">
+                        <img src="./assets/img/cons swipe2" alt="" class="h-60 object-cover">
+                        <div class="p-2">
+                            <h3 class="font-bold text-2xl">High $600</h3>
+                            <p>1181 Queen West</p>
+                            <p><span><i class="fa-sharp fa-solid fa-city"></i></span> Skale</p>
+                        </div>
+                        <p class="bg-black/70 absolute top-10 left-5 rounded-xl p-1 text-white font-bold">This Year</p>
+                        <p class="bg-black/70 absolute top-48 text-xl left-5 rounded-xl p-1 text-white font-bold">OTTAWA</p>
+                    </div>
+                    <div class="swiper-slide py-5 relative">
+                        <img src="./assets/img/cons swipe3" alt="" class="h-60 object-cover">
+                        <div class="p-2">
+                            <h3 class="font-bold text-2xl">High $600</h3>
+                            <p>1181 Queen West</p>
+                            <p><span><i class="fa-sharp fa-solid fa-city"></i></span> Skale</p>
+                        </div>
+                        <p class="bg-black/70 absolute top-10 left-5 rounded-xl p-1 text-white font-bold">This Year</p>
+                        <p class="bg-black/70 absolute top-48 text-xl left-5 rounded-xl p-1 text-white font-bold">TORONTO (AVENUE AND LAWRENCE)</p>
+                    </div>
+                    <div class="swiper-slide py-5 relative">
+                        <img src="./assets/img/cons swipe.webp" alt="" class="h-60 object-cover">
+                        <div class="p-2">
+                            <h3 class="font-bold text-2xl">High $600</h3>
+                            <p>1181 Queen West</p>
+                            <p><span><i class="fa-sharp fa-solid fa-city"></i></span> Skale</p>
+                        </div>
+                        <p class="bg-black/70 absolute top-10 left-5 rounded-xl p-1 text-white font-bold">This Year</p>
+                        <p class="bg-black/70 absolute top-48 text-xl left-5 rounded-xl p-1 text-white font-bold">TORONTO (ANETTE AND KEELE)</p>
+                    </div>
+                    <div class="swiper-slide py-5 relative">
+                        <img src="./assets/img/cons swipe.webp" alt="" class="h-60 object-cover">
+                        <div class="p-2">
+                            <h3 class="font-bold text-2xl">High $600</h3>
+                            <p>1181 Queen West</p>
+                            <p><span><i class="fa-sharp fa-solid fa-city"></i></span> Skale</p>
+                        </div>
+                        <p class="bg-black/70 absolute top-10 left-5 rounded-xl p-1 text-white font-bold">This Year</p>
+                        <p class="bg-black/70 absolute top-48 text-xl left-5 rounded-xl p-1 text-white font-bold">TORONTO (QUEEN AND DEFFERIN)</p>
+                    </div>
+                    <div class="swiper-slide py-5 relative">
+                        <img src="./assets/img/cons swipe2" alt="" class="h-60 object-cover">
+                        <div class="p-2">
+                            <h3 class="font-bold text-2xl">High $600</h3>
+                            <p>1181 Queen West</p>
+                            <p><span><i class="fa-sharp fa-solid fa-city"></i></span> Skale</p>
+                        </div>
+                        <p class="bg-black/70 absolute top-10 left-5 rounded-xl p-1 text-white font-bold">This Year</p>
+                        <p class="bg-black/70 absolute top-48 text-xl left-5 rounded-xl p-1 text-white font-bold">OTTAWA</p>
+                    </div>
+                    <div class="swiper-slide py-5 relative">
+                        <img src="./assets/img/cons swipe3" alt="" class="h-60 object-cover">
+                        <div class="p-2">
+                            <h3 class="font-bold text-2xl">High $600</h3>
+                            <p>1181 Queen West</p>
+                            <p><span><i class="fa-sharp fa-solid fa-city"></i></span> Skale</p>
+                        </div>
+                        <p class="bg-black/70 absolute top-10 left-5 rounded-xl p-1 text-white font-bold">This Year</p>
+                        <p class="bg-black/70 absolute top-48 text-xl left-5 rounded-xl p-1 text-white font-bold">TORONTO (AVENUE AND LAWRENCE)</p>
+                    </div>
+                    <div class="swiper-slide py-5 relative">
+                        <img src="./assets/img/cons swipe.webp" alt="" class="h-60 object-cover">
+                        <div class="p-2">
+                            <h3 class="font-bold text-2xl">High $600</h3>
+                            <p>1181 Queen West</p>
+                            <p><span><i class="fa-sharp fa-solid fa-city"></i></span> Skale</p>
+                        </div>
+                        <p class="bg-black/70 absolute top-10 left-5 rounded-xl p-1 text-white font-bold">This Year</p>
+                        <p class="bg-black/70 absolute top-48 text-xl left-5 rounded-xl p-1 text-white font-bold">TORONTO (ANETTE AND KEELE)</p>
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+            
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev consBtn"></div>
+                <div class="swiper-button-next consBtn"></div>
+            </div>
+        </div>    
+    </section>
+
+    <section class="bg-slate-50 py-4">
+        <div class="container mx-auto w-10/12 mb-4 relative overflow-x-hidden">
+            <h3 class="text-2xl font-mono">Coming Soon</h3>
+            <div class="swiper3">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide py-5 relative">
+                        <img src="./assets/img/cons swipe.webp" alt="" class="h-60 object-cover">
+                        <div class="p-2">
+                            <h3 class="font-bold text-2xl">High $800s</h3>
+                            <p>1181 Queen West</p>
+                            <p><span><i class="fa-sharp fa-solid fa-city"></i></span> Skale</p>
+                        </div>
+                        <p class="bg-black/70 absolute top-10 left-5 rounded-xl p-1 text-white font-bold">This Year</p>
+                        <p class="bg-black/70 absolute top-48 text-xl left-5 rounded-xl p-1 text-white font-bold">TORONTO (QUEEN AND DEFFERIN)</p>
+                    </div>
+                    <div class="swiper-slide py-5 relative">
+                        <img src="./assets/img/cons swipe2" alt="" class="h-60 object-cover">
+                        <div class="p-2">
+                            <h3 class="font-bold text-2xl">High $600s</h3>
+                            <p>1181 Queen West</p>
+                            <p><span><i class="fa-sharp fa-solid fa-city"></i></span> Skale</p>
+                        </div>
+                        <p class="bg-black/70 absolute top-10 left-5 rounded-xl p-1 text-white font-bold">Spring 2022</p>
+                        <p class="bg-black/70 absolute top-48 text-xl left-5 rounded-xl p-1 text-white font-bold">OTTAWA</p>
+                    </div>
+                    <div class="swiper-slide py-5 relative">
+                        <img src="./assets/img/cons swipe3" alt="" class="h-60 object-cover">
+                        <div class="p-2">
+                            <h3 class="font-bold text-2xl">Mid $800s</h3>
+                            <p>1181 Queen West</p>
+                            <p><span><i class="fa-sharp fa-solid fa-city"></i></span> Skale</p>
+                        </div>
+                        <p class="bg-black/70 absolute top-10 left-5 rounded-xl p-1 text-white font-bold">Winter 2022</p>
+                        <p class="bg-black/70 absolute top-48 text-xl left-5 rounded-xl p-1 text-white font-bold">TORONTO (AVENUE AND LAWRENCE)</p>
+                    </div>
+                    <div class="swiper-slide py-5 relative">
+                        <img src="./assets/img/cons swipe.webp" alt="" class="h-60 object-cover">
+                        <div class="p-2">
+                            <h3 class="font-bold text-2xl">Low $1.7Ms</h3>
+                            <p>1181 Queen West</p>
+                            <p><span><i class="fa-sharp fa-solid fa-city"></i></span> Skale</p>
+                        </div>
+                        <p class="bg-black/70 absolute top-10 left-5 rounded-xl p-1 text-white font-bold">Spring 2023</p>
+                        <p class="bg-black/70 absolute top-48 text-xl left-5 rounded-xl p-1 text-white font-bold">TORONTO (ANETTE AND KEELE)</p>
+                    </div>
+                    <div class="swiper-slide py-5 relative">
+                        <img src="./assets/img/cons swipe.webp" alt="" class="h-60 object-cover">
+                        <div class="p-2">
+                            <h3 class="font-bold text-2xl">High $600</h3>
+                            <p>1181 Queen West</p>
+                            <p><span><i class="fa-sharp fa-solid fa-city"></i></span> Skale</p>
+                        </div>
+                        <p class="bg-black/70 absolute top-10 left-5 rounded-xl p-1 text-white font-bold">Spring 2023</p>
+                        <p class="bg-black/70 absolute top-48 text-xl left-5 rounded-xl p-1 text-white font-bold">TORONTO (QUEEN AND DEFFERIN)</p>
+                    </div>
+                    <div class="swiper-slide py-5 relative">
+                        <img src="./assets/img/cons swipe2" alt="" class="h-60 object-cover">
+                        <div class="p-2">
+                            <h3 class="font-bold text-2xl">High $600</h3>
+                            <p>1181 Queen West</p>
+                            <p><span><i class="fa-sharp fa-solid fa-city"></i></span> Skale</p>
+                        </div>
+                        <p class="bg-black/70 absolute top-10 left-5 rounded-xl p-1 text-white font-bold">This Year</p>
+                        <p class="bg-black/70 absolute top-48 text-xl left-5 rounded-xl p-1 text-white font-bold">OTTAWA</p>
+                    </div>
+                    <div class="swiper-slide py-5 relative">
+                        <img src="./assets/img/cons swipe3" alt="" class="h-60 object-cover">
+                        <div class="p-2">
+                            <h3 class="font-bold text-2xl">High $600</h3>
+                            <p>1181 Queen West</p>
+                            <p><span><i class="fa-sharp fa-solid fa-city"></i></span> Skale</p>
+                        </div>
+                        <p class="bg-black/70 absolute top-10 left-5 rounded-xl p-1 text-white font-bold">This Year</p>
+                        <p class="bg-black/70 absolute top-48 text-xl left-5 rounded-xl p-1 text-white font-bold">TORONTO (AVENUE AND LAWRENCE)</p>
+                    </div>
+                    <div class="swiper-slide py-5 relative">
+                        <img src="./assets/img/cons swipe.webp" alt="" class="h-60 object-cover">
+                        <div class="p-2">
+                            <h3 class="font-bold text-2xl">High $600</h3>
+                            <p>1181 Queen West</p>
+                            <p><span><i class="fa-sharp fa-solid fa-city"></i></span> Skale</p>
+                        </div>
+                        <p class="bg-black/70 absolute top-10 left-5 rounded-xl p-1 text-white font-bold">This Year</p>
+                        <p class="bg-black/70 absolute top-48 text-xl left-5 rounded-xl p-1 text-white font-bold">TORONTO (ANETTE AND KEELE)</p>
+                    </div>
+                    <div class="swiper-slide py-5 relative">
+                        <img src="./assets/img/cons swipe.webp" alt="" class="h-60 object-cover">
+                        <div class="p-2">
+                            <h3 class="font-bold text-2xl">High $600</h3>
+                            <p>1181 Queen West</p>
+                            <p><span><i class="fa-sharp fa-solid fa-city"></i></span> Skale</p>
+                        </div>
+                        <p class="bg-black/70 absolute top-10 left-5 rounded-xl p-1 text-white font-bold">This Year</p>
+                        <p class="bg-black/70 absolute top-48 text-xl left-5 rounded-xl p-1 text-white font-bold">TORONTO (QUEEN AND DEFFERIN)</p>
+                    </div>
+                    <div class="swiper-slide py-5 relative">
+                        <img src="./assets/img/cons swipe2" alt="" class="h-60 object-cover">
+                        <div class="p-2">
+                            <h3 class="font-bold text-2xl">High $600</h3>
+                            <p>1181 Queen West</p>
+                            <p><span><i class="fa-sharp fa-solid fa-city"></i></span> Skale</p>
+                        </div>
+                        <p class="bg-black/70 absolute top-10 left-5 rounded-xl p-1 text-white font-bold">This Year</p>
+                        <p class="bg-black/70 absolute top-48 text-xl left-5 rounded-xl p-1 text-white font-bold">OTTAWA</p>
+                    </div>
+                    <div class="swiper-slide py-5 relative">
+                        <img src="./assets/img/cons swipe3" alt="" class="h-60 object-cover">
+                        <div class="p-2">
+                            <h3 class="font-bold text-2xl">High $600</h3>
+                            <p>1181 Queen West</p>
+                            <p><span><i class="fa-sharp fa-solid fa-city"></i></span> Skale</p>
+                        </div>
+                        <p class="bg-black/70 absolute top-10 left-5 rounded-xl p-1 text-white font-bold">This Year</p>
+                        <p class="bg-black/70 absolute top-48 text-xl left-5 rounded-xl p-1 text-white font-bold">TORONTO (AVENUE AND LAWRENCE)</p>
+                    </div>
+                    <div class="swiper-slide py-5 relative">
+                        <img src="./assets/img/cons swipe.webp" alt="" class="h-60 object-cover">
+                        <div class="p-2">
+                            <h3 class="font-bold text-2xl">High $600</h3>
+                            <p>1181 Queen West</p>
+                            <p><span><i class="fa-sharp fa-solid fa-city"></i></span> Skale</p>
+                        </div>
+                        <p class="bg-black/70 absolute top-10 left-5 rounded-xl p-1 text-white font-bold">This Year</p>
+                        <p class="bg-black/70 absolute top-48 text-xl left-5 rounded-xl p-1 text-white font-bold">TORONTO (ANETTE AND KEELE)</p>
+                    </div>
+                    <div class="swiper-slide py-5 relative">
+                        <img src="./assets/img/cons swipe.webp" alt="" class="h-60 object-cover">
+                        <div class="p-2">
+                            <h3 class="font-bold text-2xl">High $600</h3>
+                            <p>1181 Queen West</p>
+                            <p><span><i class="fa-sharp fa-solid fa-city"></i></span> Skale</p>
+                        </div>
+                        <p class="bg-black/70 absolute top-10 left-5 rounded-xl p-1 text-white font-bold">This Year</p>
+                        <p class="bg-black/70 absolute top-48 text-xl left-5 rounded-xl p-1 text-white font-bold">TORONTO (QUEEN AND DEFFERIN)</p>
+                    </div>
+                    <div class="swiper-slide py-5 relative">
+                        <img src="./assets/img/cons swipe2" alt="" class="h-60 object-cover">
+                        <div class="p-2">
+                            <h3 class="font-bold text-2xl">High $600</h3>
+                            <p>1181 Queen West</p>
+                            <p><span><i class="fa-sharp fa-solid fa-city"></i></span> Skale</p>
+                        </div>
+                        <p class="bg-black/70 absolute top-10 left-5 rounded-xl p-1 text-white font-bold">This Year</p>
+                        <p class="bg-black/70 absolute top-48 text-xl left-5 rounded-xl p-1 text-white font-bold">OTTAWA</p>
+                    </div>
+                    <div class="swiper-slide py-5 relative">
+                        <img src="./assets/img/cons swipe3" alt="" class="h-60 object-cover">
+                        <div class="p-2">
+                            <h3 class="font-bold text-2xl">High $600</h3>
+                            <p>1181 Queen West</p>
+                            <p><span><i class="fa-sharp fa-solid fa-city"></i></span> Skale</p>
+                        </div>
+                        <p class="bg-black/70 absolute top-10 left-5 rounded-xl p-1 text-white font-bold">This Year</p>
+                        <p class="bg-black/70 absolute top-48 text-xl left-5 rounded-xl p-1 text-white font-bold">TORONTO (AVENUE AND LAWRENCE)</p>
+                    </div>
+                    <div class="swiper-slide py-5 relative">
+                        <img src="./assets/img/cons swipe.webp" alt="" class="h-60 object-cover">
+                        <div class="p-2">
+                            <h3 class="font-bold text-2xl">High $600</h3>
+                            <p>1181 Queen West</p>
+                            <p><span><i class="fa-sharp fa-solid fa-city"></i></span> Skale</p>
+                        </div>
+                        <p class="bg-black/70 absolute top-10 left-5 rounded-xl p-1 text-white font-bold">This Year</p>
+                        <p class="bg-black/70 absolute top-48 text-xl left-5 rounded-xl p-1 text-white font-bold">TORONTO (ANETTE AND KEELE)</p>
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+            
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev consBtn"></div>
+                <div class="swiper-button-next consBtn"></div>
+            </div>
+        </div>
+        <div class="w-10/12 mx-auto">
+            <p class="font-mono my-4 text-md text-slate-500">Disclaimer: Zoocasa do not represent the builder. The information is for reference only and subject to change without notice</p>
+        </div>
+
+    </section>
+    
+
+    <footer class="bg-black">
+        <div class="container grid grid-cols-3 gap-4 mx-auto w-11/12 py-4 text-white text-center sm:grid-cols-1">
+            <div class="address">
+                <p>250 The Esplanade Suite 408 Toronto, ON M5A 4J5</p>
+            </div>
+            <div class="trademark">
+                <p class="text-xs">Zoocasa © 2007–2023. The trademarks MLS®, Multiple Listing Service® and the associated logos are owned by The Canadian Real Estate Association (CREA) and identify the quality of services provided by real estate professionals who are members of CREA.</p>
+            </div>
+            <div class="contact">
+                <h3 class="text-xl font-bold">Stay Connected</h3>
+                <div class="icons my-2">
+                    <a href="#"><i class="fa-brands fa-facebook fa-2x mx-2"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter fa-2x mx-2"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram fa-2x mx-2"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin fa-2x mx-2"></i></a>
+                </div>
+                <div class="contact-med">
+                    <a href="#"><i class="fa-solid fa-phone"></i> 1-844-683-4663</a>
+                    <a href="#"><i class="fa-regular fa-envelope"></i> INFO@ZOOCASA.COM</a>
+                </div>
+            </div>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/pagination.js"></script>
+</body>
+</html>
