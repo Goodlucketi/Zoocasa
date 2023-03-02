@@ -215,7 +215,7 @@ input[type='search']::placeholder{
     opacity: .3;
 }
 
-.hero{
+.cons-hero{
     background: url('../assets/img/construction\ hero.webp') no-repeat;
     background-size: cover;
     height: 45vh;
