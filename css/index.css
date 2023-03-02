@@ -226,6 +226,8 @@ input[type='search']::placeholder{
     --swiper-navigation-color: var(--swiper-theme-color);
     border: none;
     background: none;
+    position: absolute;
+    top: 0;
 }
 
 @media screen and (max-width:1080px){
