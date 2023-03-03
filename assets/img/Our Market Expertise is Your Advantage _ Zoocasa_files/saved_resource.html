@@ -1,0 +1,876 @@
+
+<!-- saved from url=(0041)https://www.zoocasa.com/sell-with-zoocasa -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script src="./widget"></script><style>/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  text-decoration: none;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+  border-left: 3px solid #f1f4f8;
+  margin: 0;
+  padding: 5px 10px 5px 7px;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+b {
+  font-weight: bold;
+}
+u {
+  text-decoration: underline;
+}
+i {
+  font-style: italic;
+}
+/* ----------------------------------------------------
+              Body
+ ----------------------------------------------------- */
+body {
+  font-family: 'proximanova-regular', Arial, sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #364650;
+  webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smoothing: antialiased;
+}
+* {
+  box-sizing: border-box;
+}
+/* ----------------------------------------------------
+              Fonts
+ ----------------------------------------------------- */
+@font-face {
+  font-family: 'proximanova-regular';
+  src: url('https://widgetbe.com/fonts/proximanova-regular-webfont.woff2') format('woff2'), url('https://widgetbe.com/fonts/proximanova-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'proximanova-bold';
+  src: url('https://widgetbe.com/fonts/proximanova-bold-webfont.woff2') format('woff2'), url('https://widgetbe.com/fonts/proximanova-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'proximanova-regularit';
+  src: url('https://widgetbe.com/fonts/proximanova-regularit-webfont.woff2') format('woff2'), url('https://widgetbe.com/fonts/proximanova-regularit-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'proximanova-boldit';
+  src: url('https://widgetbe.com/fonts/proximanova-boldit-webfont.woff2') format('woff2'), url('https://widgetbe.com/fonts/proximanova-boldit-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+/* ----------------------------------------------------
+Dismissed Show Button
+----------------------------------------------------- */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.pixelShowButton {
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  overflow: hidden;
+  border: 2px solid #40a2d9;
+  background-color: #40a2d9;
+  transition: all 0.2s;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 10px 0px;
+  cursor: pointer;
+  display: none;
+}
+.pixelShowButton.show {
+  display: block;
+}
+.pixelShowButton.favorites {
+  border-color: #FF8181;
+  background-color: #FF8181;
+}
+.pixelShowButton.favorites.transition {
+  animation: pulse 1s 3;
+}
+.pixelShowButton:hover {
+  transform: scale(1.1);
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 5px 0px;
+}
+.pixelShowButton svg {
+  width: 24px !important;
+  height: 24px !important;
+  color: #fff !important;
+  margin: 0 auto!important;
+  margin-top: 11px !important;
+  display: block;
+}
+.pixelShowButton #pixelShowButtonAgentAvatar {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+/* ----------------------------------------------------
+Desktop
+----------------------------------------------------- */
+@keyframes fadeOut {
+  0% {
+    z-index: 1;
+    opacity: 1;
+  }
+  60% {
+    z-index: 1;
+    opacity: 1;
+  }
+  100% {
+    z-index: 1;
+    opacity: 0;
+  }
+}
+#ctaDesktopContainer {
+  /* Set container based on assigned/unassigned state */
+  margin: 0 auto;
+  padding: 29px 10px 10px 10px;
+  /* Assigned/Unassigned container heights */
+  /* container visibilities */
+  /* CTA Base Styles */
+  /* Agent CTA Styles */
+  /* Properties Shared Styles */
+  /* Properties List View */
+  /* Properties Summary */
+  /* Close Button */
+}
+#ctaDesktopContainer.unassigned #ctaDesktopBodyAgent {
+  display: none;
+}
+#ctaDesktopContainer.unassigned #ctaDesktopBodyBody {
+  padding: 15px 10px;
+}
+#ctaDesktopContainer.unassigned {
+  height: 134px;
+}
+#ctaDesktopContainer.assigned {
+  height: 186px;
+}
+#ctaDesktopContainer.ctaDesktopPropertiesSummaryContainer #defaultContainer,
+#ctaDesktopContainer.ctaDesktopPropertiesSummaryContainer #propertiesListContainer {
+  display: none;
+}
+#ctaDesktopContainer.ctaDesktopPropertiesListContainer #propertiesSummaryContainer,
+#ctaDesktopContainer.ctaDesktopPropertiesListContainer #defaultContainer {
+  display: none;
+}
+#ctaDesktopContainer.ctaDefault #propertiesSummaryContainer,
+#ctaDesktopContainer.ctaDefault #propertiesListContainer {
+  display: none;
+}
+#ctaDesktopContainer #ctaDesktopBody {
+  position: relative;
+  background-color: #ffffff;
+  align-items: center;
+  height: 100%;
+  padding: 0px;
+  border-radius: 10px;
+  border: 1px solid #e8ecf0;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 0 10px;
+}
+#ctaDesktopContainer #ctaDesktopBodyBody {
+  text-align: center;
+  color: #364650;
+  width: 100%;
+  padding: 10px 10px 15px 10px;
+}
+#ctaDesktopContainer #ctaDesktopBodyBodyHeadingTop {
+  line-height: 1;
+}
+#ctaDesktopContainer #ctaDesktopBodyBodyHeadingBottom {
+  margin-top: 5px;
+  line-height: 1;
+}
+#ctaDesktopContainer #ctaDesktopBodyPhoneContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+#ctaDesktopContainer #ctaDesktopBodyPhoneIcon {
+  margin-right: 5px;
+  color: #40a2d9;
+}
+#ctaDesktopContainer #ctaDesktopBodyPhone {
+  font-size: 20px;
+  line-height: 1;
+}
+#ctaDesktopContainer #ctaDesktopBodyAgent {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  padding: 10px;
+  background: #f7f9fa;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom: 1px solid #e8ecf0;
+  width: 100%;
+}
+#ctaDesktopContainer #ctaDesktopBodyAgentContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#ctaDesktopContainer #ctaDesktopBodyAgentAvatar {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  margin-top: -35px;
+  margin-bottom: 5px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0 0 5px 0;
+  background: #5CA0D4;
+  border: 1px solid #ffffff;
+  overflow: hidden;
+}
+#ctaDesktopContainer #ctaDesktopBodyAgentAvatar.withImg #ctaDesktopBodyAgentAvatarInitials {
+  display: none;
+}
+#ctaDesktopContainer #ctaDesktopBodyAgentAvatar.withImg #ctaDesktopBodyAgentAvatarImg {
+  display: block;
+}
+#ctaDesktopContainer #ctaDesktopBodyAgentAvatar.withInitials #ctaDesktopBodyAgentAvatarInitials {
+  display: block;
+}
+#ctaDesktopContainer #ctaDesktopBodyAgentAvatar.withInitials #ctaDesktopBodyAgentAvatarImg {
+  display: none;
+}
+#ctaDesktopContainer #ctaDesktopBodyAgentAvatarInitials {
+  color: #ffffff;
+  letter-spacing: 1px;
+  font-size: 18px;
+}
+#ctaDesktopContainer #ctaDesktopBodyAgentAvatarImg {
+  display: none;
+  width: 50px;
+  height: 50px;
+}
+#ctaDesktopContainer #ctaDesktopBodyAgentName {
+  font-size: 16px;
+  line-height: 1;
+  font-family: 'proximanova-bold';
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 250px;
+  text-align: center;
+}
+#ctaDesktopContainer.ctaDesktopPropertiesListContainer .ctaTransition,
+#ctaDesktopContainer.ctaDesktopPropertiesSummaryContainer .ctaTransition {
+  display: none;
+}
+#ctaDesktopContainer.ctaDesktopPropertiesListContainer .ctaTransition.show,
+#ctaDesktopContainer.ctaDesktopPropertiesSummaryContainer .ctaTransition.show {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: rgba(255, 242, 242, 0.95);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 10px;
+  z-index: -1;
+  opacity: 0;
+  animation-name: fadeOut;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+}
+#ctaDesktopContainer.ctaDesktopPropertiesListContainer .ctaTransition.show .transition-container,
+#ctaDesktopContainer.ctaDesktopPropertiesSummaryContainer .ctaTransition.show .transition-container {
+  margin-top: -10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#ctaDesktopContainer.ctaDesktopPropertiesListContainer .ctaTransition.show .transition-container .transition-text,
+#ctaDesktopContainer.ctaDesktopPropertiesSummaryContainer .ctaTransition.show .transition-container .transition-text {
+  display: flex;
+  align-items: center;
+  color: #FF8181;
+  font-family: 'proximanova-bold';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 100%;
+}
+#ctaDesktopContainer.ctaDesktopPropertiesListContainer .ctaTransition.show .transition-container .transition-text > svg,
+#ctaDesktopContainer.ctaDesktopPropertiesSummaryContainer .ctaTransition.show .transition-container .transition-text > svg {
+  margin-right: 10px;
+}
+#ctaDesktopContainer.ctaDesktopPropertiesListContainer .ctaTransition.show .snapshot,
+#ctaDesktopContainer.ctaDesktopPropertiesSummaryContainer .ctaTransition.show .snapshot {
+  height: 84px;
+  width: 134px;
+  transform: rotate(-5deg);
+  border: 1px solid #FFFFFF;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
+  border-radius: 4px;
+  background-color: #E8ECF0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+#ctaDesktopContainer.ctaDesktopPropertiesListContainer .ctaTransition.show .snapshot > svg,
+#ctaDesktopContainer.ctaDesktopPropertiesSummaryContainer .ctaTransition.show .snapshot > svg {
+  display: block;
+}
+#ctaDesktopContainer.ctaDesktopPropertiesListContainer .ctaTransition.show .snapshot > img,
+#ctaDesktopContainer.ctaDesktopPropertiesSummaryContainer .ctaTransition.show .snapshot > img {
+  width: inherit;
+}
+#ctaDesktopContainer.ctaDesktopPropertiesListContainer #ctaDesktopBodyBody,
+#ctaDesktopContainer.ctaDesktopPropertiesSummaryContainer #ctaDesktopBodyBody {
+  display: flex;
+  flex: 1 1 auto;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0;
+  width: 100%;
+}
+#ctaDesktopContainer.ctaDesktopPropertiesListContainer #ctaDesktopBodyBody #ctaDesktopBodyAgentAvatar,
+#ctaDesktopContainer.ctaDesktopPropertiesSummaryContainer #ctaDesktopBodyBody #ctaDesktopBodyAgentAvatar {
+  margin: 0 10px 0 0;
+  height: 34px;
+  width: 34px;
+}
+#ctaDesktopContainer.ctaDesktopPropertiesListContainer #ctaDesktopBodyBody #ctaDesktopBodyAgentAvatar #ctaDesktopBodyAgentAvatarImg,
+#ctaDesktopContainer.ctaDesktopPropertiesSummaryContainer #ctaDesktopBodyBody #ctaDesktopBodyAgentAvatar #ctaDesktopBodyAgentAvatarImg {
+  height: 34px;
+  width: 34px;
+}
+#ctaDesktopContainer.ctaDesktopPropertiesListContainer #ctaDesktopBodyBody .ctaDesktopBodyAgentInfo,
+#ctaDesktopContainer.ctaDesktopPropertiesSummaryContainer #ctaDesktopBodyBody .ctaDesktopBodyAgentInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+#ctaDesktopContainer.ctaDesktopPropertiesListContainer #ctaDesktopBodyBody .ctaDesktopBodyAgentInfo #ctaDesktopBodyAgentName,
+#ctaDesktopContainer.ctaDesktopPropertiesSummaryContainer #ctaDesktopBodyBody .ctaDesktopBodyAgentInfo #ctaDesktopBodyAgentName {
+  width: initial;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+#ctaDesktopContainer.ctaDesktopPropertiesListContainer #ctaDesktopBodyBody .ctaDesktopBodyAgentInfo #ctaDesktopBodyPhoneContainer,
+#ctaDesktopContainer.ctaDesktopPropertiesSummaryContainer #ctaDesktopBodyBody .ctaDesktopBodyAgentInfo #ctaDesktopBodyPhoneContainer {
+  margin-top: 0;
+}
+#ctaDesktopContainer.ctaDesktopPropertiesListContainer #ctaDesktopBodyBody .ctaDesktopBodyAgentInfo #ctaDesktopBodyPhoneContainer #ctaDesktopBodyPhoneIcon,
+#ctaDesktopContainer.ctaDesktopPropertiesSummaryContainer #ctaDesktopBodyBody .ctaDesktopBodyAgentInfo #ctaDesktopBodyPhoneContainer #ctaDesktopBodyPhoneIcon {
+  height: 12px;
+  width: 12px;
+}
+#ctaDesktopContainer.ctaDesktopPropertiesListContainer #ctaDesktopBodyBody .ctaDesktopBodyAgentInfo #ctaDesktopBodyPhoneContainer #ctaDesktopBodyPhone,
+#ctaDesktopContainer.ctaDesktopPropertiesSummaryContainer #ctaDesktopBodyBody .ctaDesktopBodyAgentInfo #ctaDesktopBodyPhoneContainer #ctaDesktopBodyPhone {
+  font-size: 14px;
+  font-weight: normal;
+}
+#ctaDesktopContainer.ctaDesktopPropertiesListContainer {
+  height: 497px;
+  padding: 10px;
+}
+#ctaDesktopContainer.ctaDesktopPropertiesListContainer #propertiesListContainer {
+  max-height: 422px;
+}
+#ctaDesktopContainer.ctaDesktopPropertiesListContainer.oneProperty {
+  height: calc(497px - 99px * 3);
+}
+#ctaDesktopContainer.ctaDesktopPropertiesListContainer.oneProperty #propertiesListContainer {
+  max-height: calc(422px - 99px * 3);
+}
+#ctaDesktopContainer.ctaDesktopPropertiesListContainer.twoProperties {
+  height: calc(497px - 99px * 2);
+}
+#ctaDesktopContainer.ctaDesktopPropertiesListContainer.twoProperties #propertiesListContainer {
+  max-height: calc(422px - 99px * 2);
+}
+#ctaDesktopContainer.ctaDesktopPropertiesListContainer.threeProperties {
+  height: calc(497px - 99px * 1);
+}
+#ctaDesktopContainer.ctaDesktopPropertiesListContainer.threeProperties #propertiesListContainer {
+  max-height: calc(422px - 99px * 1);
+}
+#ctaDesktopContainer.ctaDesktopPropertiesListContainer.unassigned {
+  height: 477px;
+  padding: 10px;
+}
+#ctaDesktopContainer.ctaDesktopPropertiesListContainer.unassigned #propertiesListContainer {
+  max-height: 422px;
+}
+#ctaDesktopContainer.ctaDesktopPropertiesListContainer.unassigned.oneProperty {
+  height: calc(477px - 99px * 3);
+}
+#ctaDesktopContainer.ctaDesktopPropertiesListContainer.unassigned.oneProperty #propertiesListContainer {
+  max-height: calc(422px - 99px * 3);
+}
+#ctaDesktopContainer.ctaDesktopPropertiesListContainer.unassigned.twoProperties {
+  height: calc(477px - 99px * 2);
+}
+#ctaDesktopContainer.ctaDesktopPropertiesListContainer.unassigned.twoProperties #propertiesListContainer {
+  max-height: calc(422px - 99px * 2);
+}
+#ctaDesktopContainer.ctaDesktopPropertiesListContainer.unassigned.threeProperties {
+  height: calc(477px - 99px * 1);
+}
+#ctaDesktopContainer.ctaDesktopPropertiesListContainer.unassigned.threeProperties #propertiesListContainer {
+  max-height: calc(422px - 99px * 1);
+}
+#ctaDesktopContainer.ctaDesktopPropertiesListContainer.unassigned #ctaDesktopBodyAgentAvatar {
+  display: none;
+}
+#ctaDesktopContainer.ctaDesktopPropertiesListContainer.unassigned #ctaDesktopBodyAgentName {
+  display: none;
+}
+#ctaDesktopContainer.ctaDesktopPropertiesListContainer #ctaDesktopBody {
+  background-color: #F7F9FA;
+  display: flex;
+  flex-direction: column;
+}
+#ctaDesktopContainer.ctaDesktopPropertiesListContainer #ctaDesktopBodyBody {
+  flex: 1 0 auto;
+  border-top: 1px solid #E8ECF0;
+}
+#ctaDesktopContainer.ctaDesktopPropertiesListContainer #propertiesListContainer {
+  flex: 0 0 auto;
+  height: 100%;
+  width: 100%;
+  padding: 10px 10px 0 10px;
+  position: relative;
+}
+#ctaDesktopContainer.ctaDesktopPropertiesListContainer #propertiesListContainer .ctaTransition {
+  width: calc(100% - 20px);
+  height: calc(100% - 10px);
+  align-items: center;
+  border-radius: 10px 10px 0 0;
+}
+#ctaDesktopContainer.ctaDesktopPropertiesListContainer #propertiesListContainer .propertiesList {
+  background-color: #ffffff;
+  height: 100%;
+  width: 100%;
+  border: 1px solid #E8ECF0;
+  border-radius: 10px 10px 0 0;
+  border-bottom: none;
+  padding: 15px;
+  overflow-y: auto;
+}
+#ctaDesktopContainer.ctaDesktopPropertiesListContainer #propertiesListContainer .propertiesList .propertyCard {
+  display: flex;
+  margin-bottom: 15px;
+}
+#ctaDesktopContainer.ctaDesktopPropertiesListContainer #propertiesListContainer .propertiesList .propertyCard .propertyImage {
+  height: 84px;
+  width: 134px;
+  background-color: #E8ECF0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  overflow: hidden;
+}
+#ctaDesktopContainer.ctaDesktopPropertiesListContainer #propertiesListContainer .propertiesList .propertyCard .propertyImage img {
+  width: inherit;
+}
+#ctaDesktopContainer.ctaDesktopPropertiesListContainer #propertiesListContainer .propertiesList .propertyCard .propertyDetails h1 {
+  font-family: 'proximanova-regular';
+  color: #364750;
+  font-size: 20px;
+  line-height: 100%;
+  margin: 0 0 5px 0;
+  padding: 0;
+}
+#ctaDesktopContainer.ctaDesktopPropertiesListContainer #propertiesListContainer .propertiesList .propertyCard .propertyDetails p {
+  font-family: 'proximanova-regular';
+  color: #93A5B2;
+  font-size: 12px;
+  line-height: 16px;
+  margin: 0;
+  padding: 0;
+}
+#ctaDesktopContainer.ctaDesktopPropertiesListContainer #propertiesListContainer .propertiesList .propertyCard .propertyDetails .propertyFeatures {
+  display: flex;
+  margin-top: 5px;
+}
+#ctaDesktopContainer.ctaDesktopPropertiesListContainer #propertiesListContainer .propertiesList .propertyCard .propertyDetails .propertyFeatures > div {
+  display: flex;
+  align-items: center;
+  font-family: 'proximanova-regular';
+  font-style: normal;
+  font-weight: normal;
+  color: #364750;
+  font-size: 12px;
+  line-height: 100%;
+  margin-right: 10px;
+}
+#ctaDesktopContainer.ctaDesktopPropertiesListContainer #propertiesListContainer .propertiesList .propertyCard .propertyDetails .propertyFeatures > div > svg {
+  margin-right: 5px;
+}
+#ctaDesktopContainer.ctaDesktopPropertiesSummaryContainer.unassigned {
+  height: 166px;
+}
+#ctaDesktopContainer.ctaDesktopPropertiesSummaryContainer.unassigned #ctaDesktopBodyAgentAvatar {
+  display: none;
+}
+#ctaDesktopContainer.ctaDesktopPropertiesSummaryContainer.unassigned #ctaDesktopBodyAgentName {
+  display: none;
+}
+#ctaDesktopContainer.ctaDesktopPropertiesSummaryContainer #ctaDesktopPropertySummary {
+  height: 91px;
+  width: 100%;
+  background-color: #f7f9fa;
+  border-radius: 5px 5px 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  cursor: pointer;
+}
+#ctaDesktopContainer.ctaDesktopPropertiesSummaryContainer #ctaDesktopPropertySummary .propertyText {
+  line-height: 100%;
+  font-family: 'proximanova-bold';
+  font-size: 14px;
+  font-weight: bold;
+  color: #40a2d9;
+  margin: 10px 0;
+}
+#ctaDesktopContainer.ctaDesktopPropertiesSummaryContainer #ctaDesktopPropertySummary #propertyPhotosContainer {
+  display: flex;
+  justify-content: space-around;
+  margin-top: -15px;
+}
+#ctaDesktopContainer.ctaDesktopPropertiesSummaryContainer #ctaDesktopPropertySummary #propertyPhotosContainer > * {
+  width: 90px;
+  height: 60px;
+  transform: rotate(-5deg);
+  background-color: #E8ECF0;
+  border: 1px solid #FFFFFF;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
+  border-radius: 4px;
+}
+#ctaDesktopContainer.ctaDesktopPropertiesSummaryContainer #ctaDesktopPropertySummary #propertyPhotosContainer > *.snapshot {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  overflow: hidden;
+}
+#ctaDesktopContainer.ctaDesktopPropertiesSummaryContainer #ctaDesktopPropertySummary #propertyPhotosContainer > *.snapshot > svg {
+  display: block;
+}
+#ctaDesktopContainer.ctaDesktopPropertiesSummaryContainer #ctaDesktopPropertySummary #propertyPhotosContainer > *.snapshot > img {
+  width: inherit;
+}
+#ctaDesktopContainer.ctaDesktopPropertiesSummaryContainer #ctaDesktopPropertySummary #propertyPhotosContainer.twoProperties > :first-child {
+  margin-right: -30px;
+}
+#ctaDesktopContainer.ctaDesktopPropertiesSummaryContainer #ctaDesktopPropertySummary #propertyPhotosContainer.twoProperties > :last-child {
+  margin-top: 5px;
+  margin-left: -30px;
+}
+#ctaDesktopContainer.ctaDesktopPropertiesSummaryContainer #ctaDesktopPropertySummary #propertyPhotosContainer.threeProperties > :first-child {
+  margin-right: -60px;
+}
+#ctaDesktopContainer.ctaDesktopPropertiesSummaryContainer #ctaDesktopPropertySummary #propertyPhotosContainer.threeProperties > :nth-child(2) {
+  margin-top: 5px;
+}
+#ctaDesktopContainer.ctaDesktopPropertiesSummaryContainer #ctaDesktopPropertySummary #propertyPhotosContainer.threeProperties > :last-child {
+  margin-top: 10px;
+  margin-left: -60px;
+}
+#ctaDesktopContainer #ctaDesktopBodyClose {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #364650;
+  cursor: pointer;
+  z-index: 2;
+}
+#ctaDesktopContainer #ctaDesktopPropertyListViewClose {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #364650;
+  cursor: pointer;
+  background-color: #F7F9FA;
+  border-color: #E8ECF0;
+  height: 25px;
+  width: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 5px;
+  right: 5px;
+  z-index: 2;
+}
+#ctaDesktopContainer #ctaDesktopPropertyListViewClose #ctaDesktopPropertyListViewCloseBG {
+  position: absolute;
+  left: -4px;
+  bottom: -4px;
+  z-index: 0;
+}
+#ctaDesktopContainer #ctaDesktopPropertyListViewClose #ctaDesktopPropertyListViewCloseIcon {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  z-index: 0;
+}
+/* ----------------------------------------------------
+Mobile
+----------------------------------------------------- */
+#ctaMobileContainer {
+  /* Set container based on assigned/unassigned state */
+  /* CTA Base Styles */
+  /* Agent CTA Styles */
+  /* Close Button */
+}
+#ctaMobileContainer.unassigned {
+  padding-top: 15px;
+}
+#ctaMobileContainer.unassigned #ctaMobileBodyAgent {
+  display: none;
+}
+#ctaMobileContainer.unassigned .ctaMobileBodyBtn:first-child {
+  border-right: 1px solid #e8ecf0;
+}
+#ctaMobileContainer.assigned {
+  padding: 25px 0 0 0;
+}
+#ctaMobileContainer.assignedAvatar {
+  padding: 25px 0 0 0;
+}
+#ctaMobileContainer #ctaMobileBody {
+  position: relative;
+  display: flex;
+  height: 50px;
+  background: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px -5px 10px 0;
+}
+#ctaMobileContainer .ctaMobileBodyBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 16px;
+  color: #364650;
+  line-height: 1;
+  text-align: center;
+  flex: 1;
+  text-decoration: none;
+}
+#ctaMobileContainer .ctaMobileBodyBtnIcon {
+  margin: 0 5px 0 0;
+  color: #40a2d9;
+}
+#ctaMobileContainer #ctaMobileBodyAgent {
+  display: flex;
+  flex: 0;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#ctaMobileContainer #ctaMobileBodyAgentAvatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  margin-top: -25px;
+  margin-bottom: 5px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0 0 5px 0;
+  background: #5CA0D4;
+  border: 1px solid #ffffff;
+  overflow: hidden;
+}
+#ctaMobileContainer #ctaMobileBodyAgentAvatar.withImg #ctaMobileBodyAgentAvatarInitials {
+  display: none;
+}
+#ctaMobileContainer #ctaMobileBodyAgentAvatar.withImg #ctaMobileBodyAgentAvatarImg {
+  display: block;
+}
+#ctaMobileContainer #ctaMobileBodyAgentAvatar.withInitials #ctaMobileBodyAgentAvatarInitials {
+  display: block;
+}
+#ctaMobileContainer #ctaMobileBodyAgentAvatar.withInitials #ctaMobileBodyAgentAvatarImg {
+  display: none;
+}
+#ctaMobileContainer #ctaMobileBodyAgentAvatarInitials {
+  color: #ffffff;
+  letter-spacing: 1px;
+  font-size: 16px;
+}
+#ctaMobileContainer #ctaMobileBodyAgentAvatarImg {
+  display: none;
+  width: 40px;
+  height: 40px;
+}
+#ctaMobileContainer #ctaMobileBodyAgentName {
+  font-size: 16px;
+  line-height: 1;
+  font-family: 'proximanova-bold';
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 150px;
+  text-align: center;
+}
+#ctaMobileContainer #ctaMobileClose {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  cursor: pointer;
+  bottom: 0;
+}
+#ctaMobileContainer #ctaMobileCloseTouchTarget {
+  padding: 10px;
+  height: 100%;
+}
+</style></head><body onload="var d = document;d.getElementsByTagName(&#39;head&#39;)[0].appendChild(d.createElement(&#39;script&#39;)).src=&#39;https://widgetbe.com/widget&#39;"></body></html>

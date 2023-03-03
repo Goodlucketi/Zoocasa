@@ -10,11 +10,12 @@
 body{
     scroll-behavior: smooth;
 }
-.header,nav{
+.header,nav,.hero{
     background: url('../assets/img/zoocasa.jpeg') no-repeat;
     background-size: cover;
     background-attachment: scroll;
     z-index: 10;
+    background-position: center;
 }
 .menu{
     position: relative;

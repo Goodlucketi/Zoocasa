@@ -13,8 +13,8 @@
 
 </head>
 <body>
-    <header class="header py-4">
-        <nav class="nav-container flex justify-between items-center w-10/12 mx-auto my-0 p-5 sticky top-0 md:w-full">
+    <section class="header sticky top-0">
+        <nav class="nav-container flex justify-between items-center w-10/12 mx-auto my-0 p-5 md:w-full">
             <div class="nav-title">
                 <a href="./index.html"><h3 class="text-white text-3xl font-bold sm:text-2xl">ZO<sup>.</sup>OCASA</h3></a>
             </div>
@@ -26,14 +26,14 @@
                 <a class="mx-3 hover:underline" href="">Market Insights</a>
                 <a class="mx-3 hover:underline" href="">Join Our Team <span><i class="fa-solid fa-angle-down"></i></span></a>
                 <button class="mx-6 loginBtn"> <span><i class="fa-regular fa-user"></i></span> Login</button>
-
+    
                 <div class="menu mx-2">
                     <button class="menu-btn text-white border-2 rounded-full  p-3">Menu</button>
                     <div class="menu-links">
                         <li class="p-1 my-2 "><a class="text-white hover:underline " href="#">Find an Agent</a></li>
                         <li class="p-1 my-2 "><a class="text-white hover:underline " href="./construction.html">New Construction</a></li>
                         <li class="p-1 my-2 "><a class="text-white hover:underline " href="#">Buy With Us</a></li>
-                         <li class="p-1 my-2 "><a class="text-white hover:underline " href="#">Sell With Us</a></li>
+                         <li class="p-1 my-2 "><a class="text-white hover:underline " href="./sell.html">Sell With Us</a></li>
                         <li class="p-1 my-2 "><a class="text-white hover:underline " href="#">Home Appraisal</a></li>
                         <li class="p-1 my-2 "><a class="text-white hover:underline " href="#">New Listings</a></li>
                         <li class="p-1 my-2 "><a class="text-white hover:underline " href="#">Buying Guide</a></li>
@@ -43,21 +43,25 @@
                         <li class="p-1 my-2 "><a class="text-white hover:underline " href="#">Site Map</a></li>
                         <li class="p-1 my-2 "><a class="text-white hover:underline " href="#">About Us</a></li>
                     </div>
-                   
-                </div>
-                 
+                </div>   
             </div>
-             <div class="responsive-menu text-white lg:block">
-                <a class="mx-2 p-2 sm:mx-1 sm:p-1" href="#"><span><i class="fa-solid fa-magnifying-glass"></i></span></a>
-                <button class="resloginBtn mx-2 p-2 sm:mx-1 sm:p-1"><span><i class="fa-solid fa-user"></i></span></button>
-                <button class="mx-2 p-2 sm:mx-1 sm:p-1 nav-btn"><span><i class="fa-solid fa-bars"></i></span></button>
-
+            <div class="responsive-menu text-white lg:block">
+                <a class="mx-2 p-2 sm:mx-1 sm:p-1" href="#">
+                    <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                </a>
+                <button class="resloginBtn mx-2 p-2 sm:mx-1 sm:p-1">
+                    <span><i class="fa-solid fa-user"></i></span>
+                </button>
+                <button class="mx-2 p-2 sm:mx-1 sm:p-1 nav-btn">
+                    <span><i class="fa-solid fa-bars"></i></span>
+                </button>
+    
                 <div class="responsive-links p-5">
                     <button class="closeBtn"><i class="fa-solid fa-x"></i></button>
                     <li class="p-1 my-2 "><a class="text-white hover:underline " href="#">Find an Agent</a></li>
                     <li class="p-1 my-2 "><a class="text-white hover:underline " href="./construction.html">New Construction</a></li>
                     <li class="p-1 my-2 "><a class="text-white hover:underline " href="#">Buy With Us</a></li>
-                     <li class="p-1 my-2 "><a class="text-white hover:underline " href="#">Sell With Us</a></li>
+                     <li class="p-1 my-2 "><a class="text-white hover:underline " href="./sell.html">Sell With Us</a></li>
                     <li class="p-1 my-2 "><a class="text-white hover:underline " href="#">Home Appraisal</a></li>
                     <li class="p-1 my-2 "><a class="text-white hover:underline " href="#">New Listings</a></li>
                     <li class="p-1 my-2 "><a class="text-white hover:underline " href="#">Buying Guide</a></li>
@@ -66,11 +70,11 @@
                     <li class="p-1 my-2 "><a class="text-white hover:underline " href="#">Covid 19</a></li>
                     <li class="p-1 my-2 "><a class="text-white hover:underline " href="#">Site Map</a></li>
                     <li class="p-1 my-2 "><a class="text-white hover:underline " href="#">About Us</a></li>
-                </div>
-               
+                </div>  
             </div>
         </nav>
-
+    </section>
+    <header class="header py-4">
        <div class="breadcrumb w-11/12 text-white mx-auto p-5">
             <a href="#" class="hover:underline">Canada</a> <span><i class="fa-solid fa-chevron-right"></i></span>
             <a href="#" class="hover:underline">Ontario</a> <span><i class="fa-solid fa-chevron-right"></i></span>
@@ -105,7 +109,7 @@
                         <p class="p-2 xs:p-1"><a href="#" class="text-blue-600">Forgot Password?</a></p>
                         <input class="text-center text-white p-3 my-2 rounded w-full bg-amber-700" type="submit" value="Sign In">
     
-                        <p class="p-2 text-center">Don't have an account? <a href="#" class="text-blue-600 xs:block">Create An Account</a></p>
+                        <p class="p-2 text-center">Don't have an account? <span class="createBtn text-blue-600 xs:block">Create An Account</span></p>
                     </form>
                 </div>
             </div>
@@ -1708,6 +1712,8 @@
                 </div>
             </div>
             <div class="trademark">
+                <img src="./assets/img/Our Market Expertise is Your Advantage _ Zoocasa_files/bbb-logo.png" alt="zoocasa-goggle-logo" class="mx-auto my-3">
+                
                 <p class="text-xs">Zoocasa © 2007–2023. The trademarks MLS®, Multiple Listing Service® and the associated logos are owned by The Canadian Real Estate Association (CREA) and identify the quality of services provided by real estate professionals who are members of CREA.</p>
             </div>
             <div class="contact">
