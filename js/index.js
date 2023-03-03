@@ -84,6 +84,38 @@ const swiper3 = new Swiper('.swiper3', {
   },
 });
 
+const swiper4 = new Swiper('.swiper-buy', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+  slidesPerView: 2,
+  spaceBetween:10,
+  slidesPerGroup:4,
+
+  breakpoints: {
+    880:{
+      slidesPerView:4,
+    },
+    765:{
+      slidesPerView:3,
+    },
+    480:{
+      slidesPerView:2,
+    },
+  },
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+});
+
 
 
 tailwind.config = {
