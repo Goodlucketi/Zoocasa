@@ -231,6 +231,11 @@ input[type='search']::placeholder{
     top: 0;
 }
 
+.appraisal{
+    background: linear-gradient(to right,rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url('../assets/img/appraisal.webp') no-repeat;
+    background-size: cover;
+}
+
 @media screen and (max-width:1080px){
     .responsive-menu{
         display: block;
